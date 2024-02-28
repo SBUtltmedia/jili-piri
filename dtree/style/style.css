@@ -1,0 +1,47 @@
+body {
+    font: 5px sans-serif;
+}
+.linage {
+    fill: none;
+    stroke: #000;
+}
+.marriage {
+    fill: none;
+    stroke: rgb(196, 48, 48);
+}
+.selectedLine {
+    background-color: rgb(255, 249, 192);
+}
+.bordered {
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+}
+.man {
+        background-color: lightblue;
+}
+.woman {
+        background-color: pink;
+}
+.highlighted {
+    stroke: green;
+}
+.selected {
+        background-color: rgb(255, 249, 192)!important;
+}
+.emphasis{
+        font-style: italic;
+}
+p {
+    padding:0;
+    margin:0;
+}
+svg {
+    border-style: solid;
+    border-width: 1px;
+}
+/* .node {
+    border:0.1rem solid blue;
+    padding:0.1rem;
+    margin:1rem;
+} */

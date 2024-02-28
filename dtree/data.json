@@ -1,0 +1,737 @@
+[
+  {
+    "name": "0 name",
+    "class": "man",
+    "textClass": "emphasis",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "0 spouse",
+          "class": "woman"
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "0",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "0 spouse",
+              "class": "woman"
+            }
+          }
+        ],
+        "children": [
+          {
+            "name": "0",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "1 +",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "2 -",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "3 +",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "4 -",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 +",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "1 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2 -",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "2 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "3 +",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "3 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      },
+      {
+        "name": "4 -",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "4 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "1 name",
+    "class": "man",
+    "textClass": "emphasis",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "1 spouse",
+          "class": "woman"
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "0",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "0 spouse",
+              "class": "woman"
+            }
+          }
+        ],
+        "children": [
+          {
+            "name": "0",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "1 +",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "2 -",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "3 +",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "4 -",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 +",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "1 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2 -",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "2 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "3 +",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "3 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      },
+      {
+        "name": "4 -",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "4 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "2 name",
+    "class": "man",
+    "textClass": "emphasis",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "2 spouse",
+          "class": "woman"
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "0",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "0 spouse",
+              "class": "woman"
+            }
+          }
+        ],
+        "children": [
+          {
+            "name": "0",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "1 +",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "2 -",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "3 +",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "4 -",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 +",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "1 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2 -",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "2 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "3 +",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "3 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      },
+      {
+        "name": "4 -",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "4 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "3 name",
+    "class": "man",
+    "textClass": "emphasis",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "3 spouse",
+          "class": "woman"
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "0",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "0 spouse",
+              "class": "woman"
+            }
+          }
+        ],
+        "children": [
+          {
+            "name": "0",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "1 +",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "2 -",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "3 +",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "4 -",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 +",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "1 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2 -",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "2 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "3 +",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "3 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      },
+      {
+        "name": "4 -",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "4 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "4 name",
+    "class": "man",
+    "textClass": "emphasis",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "4 spouse",
+          "class": "woman"
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "0",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "0 spouse",
+              "class": "woman"
+            }
+          }
+        ],
+        "children": [
+          {
+            "name": "0",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "1 +",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "2 -",
+            "class": "woman",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "man"
+                }
+              }
+            ]
+          },
+          {
+            "name": "3 +",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          },
+          {
+            "name": "4 -",
+            "class": "man",
+            "textClass": "emphasis",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "1 spouse",
+                  "class": "woman"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 +",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "1 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "2 -",
+        "class": "woman",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "2 spouse",
+              "class": "man"
+            }
+          }
+        ]
+      },
+      {
+        "name": "3 +",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "3 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      },
+      {
+        "name": "4 -",
+        "class": "man",
+        "textClass": "emphasis",
+        "marriages": [
+          {
+            "spouse": {
+              "name": "4 spouse",
+              "class": "woman"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

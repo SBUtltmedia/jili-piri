@@ -60,8 +60,8 @@ var root = {
       name: "13",
       id: 13
     }, {
-      name: "14",
-      id: 14
+      name: "1234",
+      id: 1234
     }]
   }, {
     name: "8",
@@ -69,14 +69,14 @@ var root = {
     no_parent: true,
     hidden: false
   }, {
-    name: "", //from 1 to 9003
+    name: "", //from 1 to 9004
     id: 9003,
-    hidden: false,
+    hidden: true,
     no_parent: true,
     children: [{
       name: "", //from 9004 to 19, 20, 21, 22
       id: 9004,
-      hidden: false,
+      hidden: true,
       no_parent: true,
       children: [{
         name: "19",
@@ -85,11 +85,14 @@ var root = {
         name: "20",
         id: 20
       }, {
-        name: "21",
+        name: "EGO",
         id: 21
       }, {
         name: "22",
         id: 22
+      }, {
+        name: "23",
+        id: 23
       }]
     }]
   }, {
