@@ -93,6 +93,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         })
         console.log(filterLinks)
         //let [elbow,sourceId,targetId] = this._elbow();
+        console.log(this._id);
         filterLinks.append('path').attr('class', opts.styles.linage).attr('d', this._elbow).attr('id', this._id).attr('data-name', this._name);
 
         var nodes = this.g.selectAll('.node').data(treenodes.descendants()).enter();
@@ -175,7 +176,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
         var ny = Math.round(d.target.y + (d.source.y - d.target.y) * 0.50);
 
-        console.log(d.source.data.id, d.target.data.id);
+        //console.log(d.source.data.id, d.target.data.id);
         
 
         var linedata = [{
@@ -199,9 +200,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: '_id',
       value: function _id(d, i) {
-        console.log(d);
+      
         if (d.source.marriageNode) {
-          return `i_${d.source.marriageNode.data.id}_${d.target.marriageNode.data.id}`
+          //console.log(d);
+          return `i_${d.source.id}_${d.target.id}`
         }
         else if (d.source&&d.target&&d.source.data&&d.target.data) {
           return `i_${d.source.data.id}_${d.target.data.id}`;
@@ -213,11 +215,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: '_name',
       value: function _name(d, i) {
-        console.log(d);
+        
         if (d.source.marriageNode) {
-          return `${d.source.marriageNode.data.name}_${d.target.marriageNode.data.name}`
+          console.log(d);
+          let returnData = `${d.source.marriageNode.parent.data.name}_${d.target.marriageNode.parent.data.name}`
+          console.log(returnData);
+          return returnData;
+          //return `${d.source.marriageNode.data.name}_${d.target.marriageNode.data.name}`
         }
-        else if (d.source&&d.target&&d.source.data&&d.target.data) {
+        else
+        if (d.source&&d.target&&d.source.data&&d.target.data||d.source.marriageNode) {
+        
           return `${d.source.data.name}_${d.target.data.name}`;
         }
         else {

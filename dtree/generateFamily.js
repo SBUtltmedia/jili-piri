@@ -1,8 +1,12 @@
 var fs = require('fs');
 
-let rootCount = 5;
+let rootCount = 1;
 let childCount = 5;
 let G2childCount = 5;
+let G3childCount = 5;
+let G4childCount = 5;
+let G5childCount = 5;
+let G6childCount = 5;
 
 a = [...Array(rootCount).keys()];
 
@@ -41,8 +45,8 @@ a.forEach((item)=>{
                 currentG2Child.textClass = "emphasis"
                 currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
 
-                let G3childrenCount = [...Array(G2childCount).keys()]
-                let G3children = []
+                let G3childrenCount = [...Array(G3childCount).keys()]
+                let G3children = [];
                 let G3genderCount = 0;
 
                 G3childrenCount.forEach((child)=>{
@@ -50,14 +54,162 @@ a.forEach((item)=>{
 
                     if (G3genderCount == 0) {
                 
-                        currentG2Child.name = `${child}`
-                        currentG2Child.class = "man"
-                        currentG2Child.textClass = "emphasis"
-                        currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                        currentG3Child.name = `${child}`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                        let G4childrenCount = [...Array(G4childCount).keys()]
+                        let G4children = [];
+                        let G4genderCount = 0;
+
+                        G4childrenCount.forEach((child)=>{
+                            currentG4Child = {}
+        
+                            if (G4genderCount == 0) {
+                        
+                                currentG4Child.name = `${child}`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                                let G5childrenCount = [...Array(G5childCount).keys()]
+                                let G5children = [];
+                                let G5genderCount = 0;
+
+                                G5childrenCount.forEach((child)=>{
+                                    currentG5Child = {}
+                
+                                    if (G5genderCount == 0) {
+                                
+                                        currentG5Child.name = `${child}`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                                        let G6childrenCount = [...Array(G6childCount).keys()]
+                                        let G6children = [];
+                                        let G6genderCount = 0;
+                                    
+                                    } else if (G5genderCount == 1) {
+                
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 2) {
+                
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 3) {
+                                        
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                                    
+                                    } else if (G5genderCount == 4) {
+                                        
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                
+                                    }
+                
+                                    G5genderCount = ++G5genderCount
+                
+                                    G5children.push(currentG5Child)
+                                })
+
+
+
+
+                                currentG4Child.children = G5children;
+                            
+                            } else if (G4genderCount == 1) {
+        
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 2) {
+        
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 3) {
+                                
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                            
+                            } else if (G4genderCount == 4) {
+                                
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                            }
+        
+                            G4genderCount = ++G4genderCount
+        
+                            G4children.push(currentG4Child)
+                        })
+
+
+
+
+                        currentG3Child.children = G4children;
+                    
+                    } else if (G3genderCount == 1) {
+
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 2) {
+
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 3) {
+                        
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                    
+                    } else if (G3genderCount == 4) {
+                        
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
                     }
 
-                    G3genderCount
+                    G3genderCount = ++G3genderCount
+
+                    G3children.push(currentG3Child)
                 })
+
+
+
+
+                currentG2Child.children = G3children;
 
             } else if (G2genderCount == 1) {
                 
@@ -99,29 +251,926 @@ a.forEach((item)=>{
 
 
 
-            currentChild.children = G2children
+            currentChild.children = G2children;
 
 
         } else if (genderCount == 1) {
+
             currentChild.name = `${child} +`
             currentChild.class = "woman"
             currentChild.textClass = "emphasis"
             currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "man"}}]
+
+            let G2childrenCount = [...Array(G2childCount).keys()]
+            let G2children = []
+            let G2genderCount = 0;
+
+            G2childrenCount.forEach((child)=>{
+            currentG2Child = {}
+
+            if (G2genderCount == 0) {
+                
+                currentG2Child.name = `${child}`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                let G3childrenCount = [...Array(G3childCount).keys()]
+                let G3children = [];
+                let G3genderCount = 0;
+
+                G3childrenCount.forEach((child)=>{
+                    currentG3Child = {}
+
+                    if (G3genderCount == 0) {
+                
+                        currentG3Child.name = `${child}`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                        let G4childrenCount = [...Array(G4childCount).keys()]
+                        let G4children = [];
+                        let G4genderCount = 0;
+
+                        G4childrenCount.forEach((child)=>{
+                            currentG4Child = {}
+        
+                            if (G4genderCount == 0) {
+                        
+                                currentG4Child.name = `${child}`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                                let G5childrenCount = [...Array(G5childCount).keys()]
+                                let G5children = [];
+                                let G5genderCount = 0;
+
+                                G5childrenCount.forEach((child)=>{
+                                    currentG5Child = {}
+                
+                                    if (G5genderCount == 0) {
+                                
+                                        currentG5Child.name = `${child}`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                                        let G6childrenCount = [...Array(G6childCount).keys()]
+                                        let G6children = [];
+                                        let G6genderCount = 0;
+                                    
+                                    } else if (G5genderCount == 1) {
+                
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 2) {
+                
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 3) {
+                                        
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                                    
+                                    } else if (G5genderCount == 4) {
+                                        
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                
+                                    }
+                
+                                    G5genderCount = ++G5genderCount
+                
+                                    G5children.push(currentG5Child)
+                                })
+
+
+
+
+                                currentG4Child.children = G5children;
+                            
+                            } else if (G4genderCount == 1) {
+        
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 2) {
+        
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 3) {
+                                
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                            
+                            } else if (G4genderCount == 4) {
+                                
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                            }
+        
+                            G4genderCount = ++G4genderCount
+        
+                            G4children.push(currentG4Child)
+                        })
+
+
+
+
+                        currentG3Child.children = G4children;
+                    
+                    } else if (G3genderCount == 1) {
+
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 2) {
+
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 3) {
+                        
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                    
+                    } else if (G3genderCount == 4) {
+                        
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                    }
+
+                    G3genderCount = ++G3genderCount
+
+                    G3children.push(currentG3Child)
+                })
+
+
+
+
+                currentG2Child.children = G3children;
+
+            } else if (G2genderCount == 1) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 2) {
+
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 3) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            } else if (G2genderCount == 4) {
+                
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            }
+
+            G2genderCount = ++G2genderCount
+
+            G2children.push(currentG2Child)
+        })
+
+
+
+
+
+
+            currentChild.children = G2children;
+
+            
         } else if (genderCount == 2) {
+
             currentChild.name = `${child} -`
             currentChild.class = "woman"
             currentChild.textClass = "emphasis"
             currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "man"}}]
+
+            let G2childrenCount = [...Array(G2childCount).keys()]
+            let G2children = []
+            let G2genderCount = 0;
+
+            G2childrenCount.forEach((child)=>{
+            currentG2Child = {}
+
+            if (G2genderCount == 0) {
+                
+                currentG2Child.name = `${child}`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                let G3childrenCount = [...Array(G3childCount).keys()]
+                let G3children = [];
+                let G3genderCount = 0;
+
+                G3childrenCount.forEach((child)=>{
+                    currentG3Child = {}
+
+                    if (G3genderCount == 0) {
+                
+                        currentG3Child.name = `${child}`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                        let G4childrenCount = [...Array(G4childCount).keys()]
+                        let G4children = [];
+                        let G4genderCount = 0;
+
+                        G4childrenCount.forEach((child)=>{
+                            currentG4Child = {}
+        
+                            if (G4genderCount == 0) {
+                        
+                                currentG4Child.name = `${child}`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                                let G5childrenCount = [...Array(G5childCount).keys()]
+                                let G5children = [];
+                                let G5genderCount = 0;
+
+                                G5childrenCount.forEach((child)=>{
+                                    currentG5Child = {}
+                
+                                    if (G5genderCount == 0) {
+                                
+                                        currentG5Child.name = `${child}`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                                        let G6childrenCount = [...Array(G6childCount).keys()]
+                                        let G6children = [];
+                                        let G6genderCount = 0;
+                                    
+                                    } else if (G5genderCount == 1) {
+                
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 2) {
+                
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 3) {
+                                        
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                                    
+                                    } else if (G5genderCount == 4) {
+                                        
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                
+                                    }
+                
+                                    G5genderCount = ++G5genderCount
+                
+                                    G5children.push(currentG5Child)
+                                })
+
+
+
+
+                                currentG4Child.children = G5children;
+                            
+                            } else if (G4genderCount == 1) {
+        
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 2) {
+        
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 3) {
+                                
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                            
+                            } else if (G4genderCount == 4) {
+                                
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                            }
+        
+                            G4genderCount = ++G4genderCount
+        
+                            G4children.push(currentG4Child)
+                        })
+
+
+
+
+                        currentG3Child.children = G4children;
+                    
+                    } else if (G3genderCount == 1) {
+
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 2) {
+
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 3) {
+                        
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                    
+                    } else if (G3genderCount == 4) {
+                        
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                    }
+
+                    G3genderCount = ++G3genderCount
+
+                    G3children.push(currentG3Child)
+                })
+
+
+
+
+                currentG2Child.children = G3children;
+
+            } else if (G2genderCount == 1) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 2) {
+
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 3) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            } else if (G2genderCount == 4) {
+                
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            }
+
+            G2genderCount = ++G2genderCount
+
+            G2children.push(currentG2Child)
+        })
+
+
+
+
+
+
+            currentChild.children = G2children;
+
         } else if (genderCount == 3) {
+
             currentChild.name = `${child} +`
             currentChild.class = "man"
             currentChild.textClass = "emphasis"
             currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "woman"}}]
+
+            let G2childrenCount = [...Array(G2childCount).keys()]
+            let G2children = []
+            let G2genderCount = 0;
+
+            G2childrenCount.forEach((child)=>{
+            currentG2Child = {}
+
+            if (G2genderCount == 0) {
+                
+                currentG2Child.name = `${child}`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                let G3childrenCount = [...Array(G3childCount).keys()]
+                let G3children = [];
+                let G3genderCount = 0;
+
+                G3childrenCount.forEach((child)=>{
+                    currentG3Child = {}
+
+                    if (G3genderCount == 0) {
+                
+                        currentG3Child.name = `${child}`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                        let G4childrenCount = [...Array(G4childCount).keys()]
+                        let G4children = [];
+                        let G4genderCount = 0;
+
+                        G4childrenCount.forEach((child)=>{
+                            currentG4Child = {}
+        
+                            if (G4genderCount == 0) {
+                        
+                                currentG4Child.name = `${child}`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                                let G5childrenCount = [...Array(G5childCount).keys()]
+                                let G5children = [];
+                                let G5genderCount = 0;
+
+                                G5childrenCount.forEach((child)=>{
+                                    currentG5Child = {}
+                
+                                    if (G5genderCount == 0) {
+                                
+                                        currentG5Child.name = `${child}`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                                        let G6childrenCount = [...Array(G6childCount).keys()]
+                                        let G6children = [];
+                                        let G6genderCount = 0;
+                                    
+                                    } else if (G5genderCount == 1) {
+                
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 2) {
+                
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 3) {
+                                        
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                                    
+                                    } else if (G5genderCount == 4) {
+                                        
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                
+                                    }
+                
+                                    G5genderCount = ++G5genderCount
+                
+                                    G5children.push(currentG5Child)
+                                })
+
+
+
+
+                                currentG4Child.children = G5children;
+                            
+                            } else if (G4genderCount == 1) {
+        
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 2) {
+        
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 3) {
+                                
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                            
+                            } else if (G4genderCount == 4) {
+                                
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                            }
+        
+                            G4genderCount = ++G4genderCount
+        
+                            G4children.push(currentG4Child)
+                        })
+
+
+
+
+                        currentG3Child.children = G4children;
+                    
+                    } else if (G3genderCount == 1) {
+
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 2) {
+
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 3) {
+                        
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                    
+                    } else if (G3genderCount == 4) {
+                        
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                    }
+
+                    G3genderCount = ++G3genderCount
+
+                    G3children.push(currentG3Child)
+                })
+
+
+
+
+                currentG2Child.children = G3children;
+
+            } else if (G2genderCount == 1) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 2) {
+
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 3) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            } else if (G2genderCount == 4) {
+                
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            }
+
+            G2genderCount = ++G2genderCount
+
+            G2children.push(currentG2Child)
+        })
+
+
+
+
+
+
+            currentChild.children = G2children;
+
         } else if (genderCount == 4) {
+
             currentChild.name = `${child} -`
             currentChild.class = "man"
             currentChild.textClass = "emphasis"
             currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "woman"}}]
+
+            let G2childrenCount = [...Array(G2childCount).keys()]
+            let G2children = []
+            let G2genderCount = 0;
+
+            G2childrenCount.forEach((child)=>{
+            currentG2Child = {}
+
+            if (G2genderCount == 0) {
+                
+                currentG2Child.name = `${child}`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                let G3childrenCount = [...Array(G3childCount).keys()]
+                let G3children = [];
+                let G3genderCount = 0;
+
+                G3childrenCount.forEach((child)=>{
+                    currentG3Child = {}
+
+                    if (G3genderCount == 0) {
+                
+                        currentG3Child.name = `${child}`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                        let G4childrenCount = [...Array(G4childCount).keys()]
+                        let G4children = [];
+                        let G4genderCount = 0;
+
+                        G4childrenCount.forEach((child)=>{
+                            currentG4Child = {}
+        
+                            if (G4genderCount == 0) {
+                        
+                                currentG4Child.name = `${child}`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                                let G5childrenCount = [...Array(G5childCount).keys()]
+                                let G5children = [];
+                                let G5genderCount = 0;
+
+                                G5childrenCount.forEach((child)=>{
+                                    currentG5Child = {}
+                
+                                    if (G5genderCount == 0) {
+                                
+                                        currentG5Child.name = `${child}`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                                        let G6childrenCount = [...Array(G6childCount).keys()]
+                                        let G6children = [];
+                                        let G6genderCount = 0;
+                                    
+                                    } else if (G5genderCount == 1) {
+                
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 2) {
+                
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "woman"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                                    
+                                    } else if (G5genderCount == 3) {
+                                        
+                                        currentG5Child.name = `${child} +`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                                    
+                                    } else if (G5genderCount == 4) {
+                                        
+                                        currentG5Child.name = `${child} -`
+                                        currentG5Child.class = "man"
+                                        currentG5Child.textClass = "emphasis"
+                                        currentG5Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                
+                                    }
+                
+                                    G5genderCount = ++G5genderCount
+                
+                                    G5children.push(currentG5Child)
+                                })
+
+
+
+
+                                currentG4Child.children = G5children;
+                            
+                            } else if (G4genderCount == 1) {
+        
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 2) {
+        
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "woman"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                            
+                            } else if (G4genderCount == 3) {
+                                
+                                currentG4Child.name = `${child} +`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                            
+                            } else if (G4genderCount == 4) {
+                                
+                                currentG4Child.name = `${child} -`
+                                currentG4Child.class = "man"
+                                currentG4Child.textClass = "emphasis"
+                                currentG4Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+        
+                            }
+        
+                            G4genderCount = ++G4genderCount
+        
+                            G4children.push(currentG4Child)
+                        })
+
+
+
+
+                        currentG3Child.children = G4children;
+                    
+                    } else if (G3genderCount == 1) {
+
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 2) {
+
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "woman"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+                    
+                    } else if (G3genderCount == 3) {
+                        
+                        currentG3Child.name = `${child} +`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+                    
+                    } else if (G3genderCount == 4) {
+                        
+                        currentG3Child.name = `${child} -`
+                        currentG3Child.class = "man"
+                        currentG3Child.textClass = "emphasis"
+                        currentG3Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+                    }
+
+                    G3genderCount = ++G3genderCount
+
+                    G3children.push(currentG3Child)
+                })
+
+
+
+
+                currentG2Child.children = G3children;
+
+            } else if (G2genderCount == 1) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 2) {
+
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "woman"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "man"}}]
+
+            } else if (G2genderCount == 3) {
+                
+                currentG2Child.name = `${child} +`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            } else if (G2genderCount == 4) {
+                
+                currentG2Child.name = `${child} -`
+                currentG2Child.class = "man"
+                currentG2Child.textClass = "emphasis"
+                currentG2Child.marriages = [{spouse: {name:`${1} spouse`, class: "woman"}}]
+
+            }
+
+            G2genderCount = ++G2genderCount
+
+            G2children.push(currentG2Child)
+        })
+
+
+
+
+
+
+            currentChild.children = G2children;
+
             
         }
 

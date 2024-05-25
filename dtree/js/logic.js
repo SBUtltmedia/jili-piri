@@ -19,7 +19,7 @@ function init (treeData) {
     callbacks: {
       nodeClick: function(name, extra, id) {
         let selectedNode = d3.select(`#node${id}`);
-        console.log(selectedNode, id);
+        console.log(id);
         // d3.select(`#node${id}`).classed("man", false);
         // d3.select(`#node${id}`).classed("woman", false);
         d3.selectAll(".selected").classed("selected", false);

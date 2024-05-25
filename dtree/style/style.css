@@ -19,15 +19,22 @@ body {
 }
 .man {
         background-color: lightblue;
+
 }
 .woman {
         background-color: pink;
+        border-radius: 50%;
+        width: 1rem!important;
+        height: 1rem!important;
 }
 .highlighted {
     stroke: green;
 }
 .selected {
         background-color: rgb(255, 249, 192)!important;
+}
+.ego {
+    background-color: rgb(123, 255, 83);
 }
 .emphasis{
         font-style: italic;
