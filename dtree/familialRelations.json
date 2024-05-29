@@ -1,7 +1,7 @@
 [{
-"F": {"warlpiri": [68], "jiliwiri": []},
-"M": {"warlpiri": [72, 68, 84], "jiliwiri": []},
-"FF": {"warlpiri": [68, 67], "jiliwiri": []},
-"FM": {"warlpiri": [68, 67, 98], "jiliwiri": []}
+"F": {"warlpiri": [129], "jiliwiri1": [131], "jiliwiri2": [155], "jiliwiri3": [158]},
+"M": {"warlpiri": [], "jiliwiri": []},
+"FF": {"warlpiri": [129, 128], "jiliwiri1": [131, 132], "jiliwiri2": [131, 141], "jiliwiri3": [131, 144]},
+"FM": {"warlpiri": [], "jiliwiri": []}
 
 }]
