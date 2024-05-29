@@ -1,3 +1,5 @@
+let EGOid = 130;
+
 function logMovies() {
   fetch("data.json")
   .then(
@@ -8,6 +10,27 @@ function logMovies() {
   // init (kinshipTree);
 }
 
+function highlight (idList) {
+  //let svg = document.getElementsByTagName("g")[0];
+  let svg = document.querySelector("g");
+  let paths = document.getElementsByTagName("path");
+  if (idList[1] < EGOid) {
+  idList = idList.reverse();
+  }
+  console.log(idList);
+  let highlightLine = `#i_${idList[0]}_${idList[1]}`;
+  let highlightLineEl = document.querySelector(highlightLine);
+  let cloneLine = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+  //[...highlightLineEl.attributes].forEach( attr => { cloneLine.setAttributeNS("http://www.w3.org/2000/svg", attr.nodeName ,attr.nodeValue) })
+  cloneLine.setAttribute("id" , highlightLineEl.getAttribute("id")+"_highlight");
+  cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlighted");
+  cloneLine.setAttribute("d" , highlightLineEl.getAttribute("d"));
+  //svg.append(cloneLine);
+  paths[paths.length - 1].after(cloneLine);
+  //paths.slice(-1).after(cloneLine);
+  let highlightNode = d3.select(highlightLine);
+
+}
 
 function init (treeData) {
 
@@ -26,7 +49,7 @@ function init (treeData) {
         d3.select(`#node${id}`).classed("selected", !d3.select(`#node${id}`).classed("selected"));
 
         //trace path from EGO to id ex. tracePath(EGOid, id); with EGOid set to EGO and id being the id of the clicked node
-
+        highlight([130, id]);
       },
       marriageClick: function(extra, id) {
         let selectedLine = d3.select(`#node${id}`);
