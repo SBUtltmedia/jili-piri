@@ -1,0 +1,375 @@
+<svg viewBox="0,0,1200,800" style="touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+    <style>
+        body {
+    font: 5px sans-serif;
+}
+rect {
+    fill: none;
+    stroke:rgb(0, 0, 0)
+}
+.linage {
+    fill: none;
+    stroke: #000;
+}
+.marriage {
+    fill: none;
+    stroke: rgb(196, 48, 48);
+}
+.selectedLine {
+    background-color: rgb(255, 249, 192);
+}
+.bordered {
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+}
+.man {
+        background-color: lightblue;
+
+}
+.woman {
+        background-color: pink;
+        border-radius: 50%;
+        width: 1rem!important;
+        height: 1rem!important;
+}
+.highlighted {
+    stroke: green;
+    
+    
+}
+.selected {
+        background-color: rgb(255, 249, 192)!important;
+}
+.ego {
+    background-color: rgb(123, 255, 83);
+}
+.emphasis{
+        font-style: italic;
+}
+p {
+    padding:0;
+    margin:0;
+}
+svg {
+    border-style: solid;
+    border-width: 1px;
+}
+/* .node {
+    border:0.1rem solid blue;
+    padding:0.1rem;
+    margin:1rem;
+} */
+        </style>
+    <g transform="translate(1071.9424620340037,-20.13036562999298) scale(2.499999999999999)">
+        <path class="linage" d="M-168,82L-168,82L-168,62L0,62L0,41" id="i_2_4" data-name="_FF"></path>
+        <path class="linage" d="M55.99999999999998,82L55.99999999999998,82L55.99999999999998,62L0,62L0,41" id="i_2_64"
+            data-name="_FFZ"></path>
+        <path class="linage"
+            d="M-192.00000000000003,123L-192.00000000000003,123L-192.00000000000003,103L-156,103L-156,82" id="i_5_7"
+            data-name="_FZ"></path>
+        <path class="linage"
+            d="M-144.00000000000003,123L-144.00000000000003,123L-144.00000000000003,103L-156,103L-156,82" id="i_5_10"
+            data-name="_F"></path>
+        <path class="linage"
+            d="M119.99999999999993,123L119.99999999999993,123L119.99999999999993,103L155.99999999999994,103L155.99999999999994,82"
+            id="i_65_67" data-name="_FFZD"></path>
+        <path class="linage"
+            d="M167.99999999999994,123L167.99999999999994,123L167.99999999999994,103L155.99999999999994,103L155.99999999999994,82"
+            id="i_65_70" data-name="_FFZS"></path>
+        <path class="linage" d="M-312,164L-312,164L-312,144L-132.00000000000003,144L-132.00000000000003,123"
+            id="i_11_13" data-name="_Z-"></path>
+        <path class="linage"
+            d="M-264.00000000000006,164L-264.00000000000006,164L-264.00000000000006,144L-132.00000000000003,144L-132.00000000000003,123"
+            id="i_11_16" data-name="_Z+"></path>
+        <path class="linage"
+            d="M-120.00000000000003,164L-120.00000000000003,164L-120.00000000000003,144L-132.00000000000003,144L-132.00000000000003,123"
+            id="i_11_37" data-name="_EGO"></path>
+        <path class="linage"
+            d="M-24.000000000000092,164L-24.000000000000092,164L-24.000000000000092,144L-132.00000000000003,144L-132.00000000000003,123"
+            id="i_11_58" data-name="_B+"></path>
+        <path class="linage"
+            d="M23.999999999999915,164L23.999999999999915,164L23.999999999999915,144L-132.00000000000003,144L-132.00000000000003,123"
+            id="i_11_61" data-name="_B-"></path>
+        <path class="linage"
+            d="M71.99999999999996,164L71.99999999999996,164L71.99999999999996,144L179.99999999999994,144L179.99999999999994,123"
+            id="i_71_73" data-name="_FFZSD-"></path>
+        <path class="linage"
+            d="M119.99999999999997,164L119.99999999999997,164L119.99999999999997,144L179.99999999999994,144L179.99999999999994,123"
+            id="i_71_76" data-name="_FFZSD+"></path>
+        <path class="linage"
+            d="M167.99999999999997,164L167.99999999999997,164L167.99999999999997,144L179.99999999999994,144L179.99999999999994,123"
+            id="i_71_79" data-name="_FFZSS"></path>
+        <path class="linage"
+            d="M215.99999999999994,164L215.99999999999994,164L215.99999999999994,144L179.99999999999994,144L179.99999999999994,123"
+            id="i_71_88" data-name="_FFZSS+"></path>
+        <path class="linage"
+            d="M263.9999999999999,164L263.9999999999999,164L263.9999999999999,144L179.99999999999994,144L179.99999999999994,123"
+            id="i_71_91" data-name="_FFZSS-"></path>
+        <path class="linage" d="M-312,205L-312,205L-312,185L-252.00000000000003,185L-252.00000000000003,164"
+            id="i_17_19" data-name="_Z+D"></path>
+        <path class="linage"
+            d="M-232.00000000000003,205L-232.00000000000003,205L-232.00000000000003,185L-252.00000000000003,185L-252.00000000000003,164"
+            id="i_17_28" data-name="_Z+S"></path>
+        <path class="linage"
+            d="M-120.00000000000003,205L-120.00000000000003,205L-120.00000000000003,185L-60.00000000000007,185L-60.00000000000007,164"
+            id="i_38_40" data-name="_D"></path>
+        <path class="linage"
+            d="M-40.000000000000036,205L-40.000000000000036,205L-40.000000000000036,185L-60.00000000000007,185L-60.00000000000007,164"
+            id="i_38_49" data-name="_S"></path>
+        <path class="linage"
+            d="M143.99999999999994,205L143.99999999999994,205L143.99999999999994,185L179.99999999999994,185L179.99999999999994,164"
+            id="i_80_82" data-name="_FFZSSD-"></path>
+        <path class="linage"
+            d="M191.99999999999994,205L191.99999999999994,205L191.99999999999994,185L179.99999999999994,185L179.99999999999994,164"
+            id="i_80_85" data-name="_FFZSSD+"></path>
+        <path class="linage" d="M-336,246L-336,246L-336,226L-300.00000000000006,226L-300.00000000000006,205"
+            id="i_20_22" data-name="_Z+DD"></path>
+        <path class="linage" d="M-288,246L-288,246L-288,226L-300.00000000000006,226L-300.00000000000006,205"
+            id="i_20_25" data-name="_Z+DS"></path>
+        <path class="linage"
+            d="M-240.00000000000003,246L-240.00000000000003,246L-240.00000000000003,226L-204.00000000000003,226L-204.00000000000003,205"
+            id="i_29_31" data-name="_Z+SD"></path>
+        <path class="linage"
+            d="M-192.00000000000003,246L-192.00000000000003,246L-192.00000000000003,226L-204.00000000000003,226L-204.00000000000003,205"
+            id="i_29_34" data-name="_Z+SS"></path>
+        <path class="linage"
+            d="M-144.00000000000003,246L-144.00000000000003,246L-144.00000000000003,226L-108.00000000000003,226L-108.00000000000003,205"
+            id="i_41_43" data-name="_DD"></path>
+        <path class="linage"
+            d="M-96.00000000000006,246L-96.00000000000006,246L-96.00000000000006,226L-108.00000000000003,226L-108.00000000000003,205"
+            id="i_41_46" data-name="_DS"></path>
+        <path class="linage"
+            d="M-48.00000000000004,246L-48.00000000000004,246L-48.00000000000004,226L-12.000000000000028,226L-12.000000000000028,205"
+            id="i_50_52" data-name="_SD"></path>
+        <path class="linage"
+            d="M-4.440892098500626e-14,246L-4.440892098500626e-14,246L-4.440892098500626e-14,226L-12.000000000000028,226L-12.000000000000028,205"
+            id="i_50_55" data-name="_SS"></path>
+        <path class="marriage" id="i_7_9" data-name="_"
+            d="M-192.00000000000003,123L-180,123L-180,123L-180,123L-180,123L-180.00000000000003,123L-180.00000000000003,123L-180.00000000000003,123L-180.00000000000003,123L-168.00000000000006,123L-168.00000000000006,123">
+        </path>
+        <path class="marriage" id="i_13_15" data-name="_"
+            d="M-312,164L-300,164L-300,164L-300,164L-300,164L-300.00000000000006,164L-300.00000000000006,164L-300.00000000000006,164L-300.00000000000006,164L-288.00000000000006,164L-288.00000000000006,164">
+        </path>
+        <path class="marriage" id="i_22_24" data-name="_"
+            d="M-336,246L-324,246L-324,246L-324,246L-324,246L-324,246L-324,246L-324,246L-324,246L-312,246L-312,246">
+        </path>
+        <path class="marriage" id="i_25_27" data-name="_"
+            d="M-288,246L-276,246L-276,246L-276,246L-276,246L-276,246L-276,246L-276,246L-276,246L-264,246L-264,246">
+        </path>
+        <path class="marriage" id="i_19_21" data-name="_"
+            d="M-312,205L-300,205L-300,205L-300,205L-300,205L-300.00000000000006,205L-300.00000000000006,205L-300.00000000000006,205L-300.00000000000006,205L-272,205L-272,205">
+        </path>
+        <path class="marriage" id="i_31_33" data-name="_"
+            d="M-240.00000000000003,246L-228,246L-228,246L-228,246L-228,246L-228.00000000000006,246L-228.00000000000006,246L-228.00000000000006,246L-228.00000000000006,246L-216.00000000000006,246L-216.00000000000006,246">
+        </path>
+        <path class="marriage" id="i_34_36" data-name="_"
+            d="M-192.00000000000003,246L-180,246L-180,246L-180,246L-180,246L-180.00000000000003,246L-180.00000000000003,246L-180.00000000000003,246L-180.00000000000003,246L-168.00000000000006,246L-168.00000000000006,246">
+        </path>
+        <path class="marriage" id="i_28_30" data-name="_"
+            d="M-232.00000000000003,205L-220,205L-220,205L-220,205L-220,205L-204.00000000000003,205L-204.00000000000003,205L-204.00000000000003,205L-204.00000000000003,205L-192.00000000000003,205L-192.00000000000003,205">
+        </path>
+        <path class="marriage" id="i_16_18" data-name="_"
+            d="M-264.00000000000006,164L-252,164L-252,164L-252,164L-252,164L-252.00000000000003,164L-252.00000000000003,164L-252.00000000000003,164L-252.00000000000003,164L-192.00000000000003,164L-192.00000000000003,164">
+        </path>
+        <path class="marriage" id="i_43_45" data-name="_"
+            d="M-144.00000000000003,246L-132,246L-132,246L-132,246L-132,246L-132.00000000000006,246L-132.00000000000006,246L-132.00000000000006,246L-132.00000000000006,246L-120.00000000000003,246L-120.00000000000003,246">
+        </path>
+        <path class="marriage" id="i_46_48" data-name="_"
+            d="M-96.00000000000006,246L-84,246L-84,246L-84,246L-84,246L-84.00000000000004,246L-84.00000000000004,246L-84.00000000000004,246L-84.00000000000004,246L-72.00000000000004,246L-72.00000000000004,246">
+        </path>
+        <path class="marriage" id="i_40_42" data-name="_"
+            d="M-120.00000000000003,205L-108,205L-108,205L-108,205L-108,205L-108.00000000000003,205L-108.00000000000003,205L-108.00000000000003,205L-108.00000000000003,205L-80.00000000000003,205L-80.00000000000003,205">
+        </path>
+        <path class="marriage" id="i_52_54" data-name="_"
+            d="M-48.00000000000004,246L-36,246L-36,246L-36,246L-36,246L-36.00000000000004,246L-36.00000000000004,246L-36.00000000000004,246L-36.00000000000004,246L-24.000000000000043,246L-24.000000000000043,246">
+        </path>
+        <path class="marriage" id="i_55_57" data-name="_"
+            d="M-4.440892098500626e-14,246L12,246L12,246L12,246L12,246L11.999999999999957,246L11.999999999999957,246L11.999999999999957,246L11.999999999999957,246L23.999999999999957,246L23.999999999999957,246">
+        </path>
+        <path class="marriage" id="i_49_51" data-name="_"
+            d="M-40.000000000000036,205L-28,205L-28,205L-28,205L-28,205L-12.000000000000028,205L-12.000000000000028,205L-12.000000000000028,205L-12.000000000000028,205L-3.552713678800501e-14,205L-3.552713678800501e-14,205">
+        </path>
+        <path class="marriage" id="i_37_39" data-name="_"
+            d="M-120.00000000000003,164L-108,164L-108,164L-108,164L-108,164L-60.00000000000007,164L-60.00000000000007,164L-60.00000000000007,164L-60.00000000000007,164L-48.00000000000008,164L-48.00000000000008,164">
+        </path>
+        <path class="marriage" id="i_58_60" data-name="_"
+            d="M-24.000000000000092,164L-12,164L-12,164L-12,164L-12,164L-12.0000000000001,164L-12.0000000000001,164L-12.0000000000001,164L-12.0000000000001,164L-1.0658141036401503e-13,164L-1.0658141036401503e-13,164">
+        </path>
+        <path class="marriage" id="i_61_63" data-name="_"
+            d="M23.999999999999915,164L36,164L36,164L36,164L36,164L35.99999999999994,164L35.99999999999994,164L35.99999999999994,164L35.99999999999994,164L47.99999999999997,164L47.99999999999997,164">
+        </path>
+        <path class="marriage" id="i_10_12" data-name="_"
+            d="M-144.00000000000003,123L-132,123L-132,123L-132,123L-132,123L-132.00000000000003,123L-132.00000000000003,123L-132.00000000000003,123L-132.00000000000003,123L-120.00000000000003,123L-120.00000000000003,123">
+        </path>
+        <path class="marriage" id="i_4_6" data-name="_"
+            d="M-168,82L-156,82L-156,82L-156,82L-156,82L-156,82L-156,82L-156,82L-156,82L-56.000000000000014,82L-56.000000000000014,82">
+        </path>
+        <path class="marriage" id="i_67_69" data-name="_"
+            d="M119.99999999999993,123L132,123L132,123L132,123L132,123L131.99999999999991,123L131.99999999999991,123L131.99999999999991,123L131.99999999999991,123L143.99999999999994,123L143.99999999999994,123">
+        </path>
+        <path class="marriage" id="i_73_75" data-name="_"
+            d="M71.99999999999996,164L84,164L84,164L84,164L84,164L83.99999999999994,164L83.99999999999994,164L83.99999999999994,164L83.99999999999994,164L95.99999999999996,164L95.99999999999996,164">
+        </path>
+        <path class="marriage" id="i_76_78" data-name="_"
+            d="M119.99999999999997,164L132,164L132,164L132,164L132,164L131.99999999999994,164L131.99999999999994,164L131.99999999999994,164L131.99999999999994,164L143.99999999999994,164L143.99999999999994,164">
+        </path>
+        <path class="marriage" id="i_82_84" data-name="_"
+            d="M143.99999999999994,205L156,205L156,205L156,205L156,205L155.99999999999994,205L155.99999999999994,205L155.99999999999994,205L155.99999999999994,205L167.99999999999994,205L167.99999999999994,205">
+        </path>
+        <path class="marriage" id="i_85_87" data-name="_"
+            d="M191.99999999999994,205L204,205L204,205L204,205L204,205L203.99999999999994,205L203.99999999999994,205L203.99999999999994,205L203.99999999999994,205L215.99999999999994,205L215.99999999999994,205">
+        </path>
+        <path class="marriage" id="i_79_81" data-name="_"
+            d="M167.99999999999997,164L180,164L180,164L180,164L180,164L179.99999999999994,164L179.99999999999994,164L179.99999999999994,164L179.99999999999994,164L191.99999999999994,164L191.99999999999994,164">
+        </path>
+        <path class="marriage" id="i_88_90" data-name="_"
+            d="M215.99999999999994,164L228,164L228,164L228,164L228,164L227.99999999999994,164L227.99999999999994,164L227.99999999999994,164L227.99999999999994,164L239.99999999999994,164L239.99999999999994,164">
+        </path>
+        <path class="marriage" id="i_91_93" data-name="_"
+            d="M263.9999999999999,164L276,164L276,164L276,164L276,164L275.9999999999999,164L275.9999999999999,164L275.9999999999999,164L275.9999999999999,164L287.9999999999999,164L287.9999999999999,164">
+        </path>
+        <path class="marriage" id="i_70_72" data-name="_"
+            d="M167.99999999999994,123L180,123L180,123L180,123L180,123L179.99999999999994,123L179.99999999999994,123L179.99999999999994,123L179.99999999999994,123L191.99999999999991,123L191.99999999999991,123">
+        </path>
+        <path class="marriage" id="i_64_66" data-name="_"
+            d="M55.99999999999998,82L68,82L68,82L68,82L68,82L155.99999999999994,82L155.99999999999994,82L155.99999999999994,82L155.99999999999994,82L167.99999999999997,82L167.99999999999997,82">
+        </path>
+        <path class="marriage" id="i_1_3" data-name="_" d="M-12,41L0,41L0,41L0,41L0,41L0,41L0,41L0,41L0,41L12,41L12,41">
+        </path><text></text><text x="-22" y="41" width="20" height="9">0 name</text><text></text><text x="2" y="41"
+            width="20" height="24">0 spouse</text><text x="-178" y="82" width="20"
+            height="9">FF</text><text></text><text x="-66" y="82" width="20" height="24">FM</text><text x="46" y="82"
+            width="20" height="24">FFZ</text><text></text><text x="158" y="82" width="20" height="9">FFZH</text><text
+            x="-202" y="123" width="20" height="24">FZ</text><text></text><text x="-178" y="123" width="20"
+            height="9">FZH</text><text x="-154" y="123" width="20" height="9">F</text><text></text><text x="-130"
+            y="123" width="20" height="24">M</text><text x="110" y="123" width="20"
+            height="24">FFZD</text><text></text><text x="134" y="123" width="20" height="9">FFZDH</text><text x="158"
+            y="123" width="20" height="9">FFZS</text><text></text><text x="182" y="123" width="20"
+            height="24">FFZSW</text><text x="-322" y="164" width="20" height="24">Z-</text><text></text><text x="-298"
+            y="164" width="20" height="9">Z-H</text><text x="-274" y="164" width="20"
+            height="24">Z+</text><text></text><text x="-202" y="164" width="20" height="9">Z+H</text><text x="-130"
+            y="164" width="20" height="9">EGO</text><text></text><text x="-58" y="164" width="20"
+            height="24">W</text><text x="-34" y="164" width="20" height="9">B+</text><text></text><text x="-10" y="164"
+            width="20" height="24">B+W</text><text x="14" y="164" width="20" height="9">B-</text><text></text><text
+            x="38" y="164" width="20" height="24">B-W</text><text x="62" y="164" width="20"
+            height="24">FFZSD-</text><text></text><text x="86" y="164" width="20" height="18">FFZSD-H</text><text
+            x="110" y="164" width="20" height="24">FFZSD+</text><text></text><text x="134" y="164" width="20"
+            height="9">FFZSD+H</text><text x="158" y="164" width="20" height="9">FFZSS</text><text></text><text x="182"
+            y="164" width="20" height="24">FFZSSW</text><text x="206" y="164" width="20"
+            height="9">FFZSS+</text><text></text><text x="230" y="164" width="20" height="24">FFZSS+W</text><text
+            x="254" y="164" width="20" height="9">FFZSS-</text><text></text><text x="278" y="164" width="20"
+            height="24">FFZSS-W</text><text x="-322" y="205" width="20" height="24">Z+D</text><text></text><text
+            x="-282" y="205" width="20" height="9">Z+DH</text><text x="-242" y="205" width="20"
+            height="9">Z+S</text><text></text><text x="-202" y="205" width="20" height="24">Z+SW</text><text x="-130"
+            y="205" width="20" height="24">D</text><text></text><text x="-90" y="205" width="20"
+            height="9">Z+SH</text><text x="-50" y="205" width="20" height="9">S</text><text></text><text x="-10" y="205"
+            width="20" height="24">SW</text><text x="134" y="205" width="20"
+            height="24">FFZSSD-</text><text></text><text x="158" y="205" width="20" height="18">FFZSSD-H</text><text
+            x="182" y="205" width="20" height="24">FFZSSD+</text><text></text><text x="206" y="205" width="20"
+            height="9">FFZSSD+H</text><text x="-346" y="246" width="20" height="24">Z+DD</text><text></text><text
+            x="-322" y="246" width="20" height="9">Z+DDH</text><text x="-298" y="246" width="20"
+            height="9">Z+DS</text><text></text><text x="-274" y="246" width="20" height="24">Z+DSW</text><text x="-250"
+            y="246" width="20" height="24">Z+SD</text><text></text><text x="-226" y="246" width="20"
+            height="9">Z+SDH</text><text x="-202" y="246" width="20" height="9">Z+SS</text><text></text><text x="-178"
+            y="246" width="20" height="24">Z+SSW</text><text x="-154" y="246" width="20"
+            height="24">DD</text><text></text><text x="-130" y="246" width="20" height="9">DDH</text><text x="-106"
+            y="246" width="20" height="9">DS</text><text></text><text x="-82" y="246" width="20"
+            height="24">DSW</text><text x="-58" y="246" width="20" height="24">SD</text><text></text><text x="-34"
+            y="246" width="20" height="9">SDH</text><text x="-10" y="246" width="20"
+            height="9">SS</text><text></text><text x="14" y="246" width="20" height="24">SSW</text>
+        <rect></rect>
+        <rect x="-22" y="38" width="20" height="9" id="1"></rect>
+        <rect></rect>
+        <rect x="2" y="33" width="20" height="24" id="93"></rect>
+        <rect x="-178" y="79" width="20" height="9" id="2"></rect>
+        <rect></rect>
+        <rect x="-66" y="74" width="20" height="24" id="61"></rect>
+        <rect x="46" y="74" width="20" height="24" id="62"></rect>
+        <rect></rect>
+        <rect x="158" y="79" width="20" height="9" id="91"></rect>
+        <rect x="-202" y="115" width="20" height="24" id="3"></rect>
+        <rect></rect>
+        <rect x="-178" y="120" width="20" height="9" id="5"></rect>
+        <rect x="-154" y="120" width="20" height="9" id="6"></rect>
+        <rect></rect>
+        <rect x="-130" y="115" width="20" height="24" id="59"></rect>
+        <rect x="110" y="115" width="20" height="24" id="63"></rect>
+        <rect></rect>
+        <rect x="134" y="120" width="20" height="9" id="65"></rect>
+        <rect x="158" y="120" width="20" height="9" id="66"></rect>
+        <rect></rect>
+        <rect x="182" y="115" width="20" height="24" id="89"></rect>
+        <rect x="-322" y="156" width="20" height="24" id="7"></rect>
+        <rect></rect>
+        <rect x="-298" y="161" width="20" height="9" id="9"></rect>
+        <rect x="-274" y="156" width="20" height="24" id="10"></rect>
+        <rect></rect>
+        <rect x="-202" y="161" width="20" height="9" id="30"></rect>
+        <rect x="-130" y="161" width="20" height="9" id="31"></rect>
+        <rect></rect>
+        <rect x="-58" y="156" width="20" height="24" id="51"></rect>
+        <rect x="-34" y="161" width="20" height="9" id="52"></rect>
+        <rect></rect>
+        <rect x="-10" y="156" width="20" height="24" id="54"></rect>
+        <rect x="14" y="161" width="20" height="9" id="55"></rect>
+        <rect></rect>
+        <rect x="38" y="156" width="20" height="24" id="57"></rect>
+        <rect x="62" y="156" width="20" height="24" id="67"></rect>
+        <rect></rect>
+        <rect x="86" y="158" width="20" height="18" id="69"></rect>
+        <rect x="110" y="156" width="20" height="24" id="70"></rect>
+        <rect></rect>
+        <rect x="134" y="161" width="20" height="9" id="72"></rect>
+        <rect x="158" y="161" width="20" height="9" id="73"></rect>
+        <rect></rect>
+        <rect x="182" y="156" width="20" height="24" id="81"></rect>
+        <rect x="206" y="161" width="20" height="9" id="82"></rect>
+        <rect></rect>
+        <rect x="230" y="156" width="20" height="24" id="84"></rect>
+        <rect x="254" y="161" width="20" height="9" id="85"></rect>
+        <rect></rect>
+        <rect x="278" y="156" width="20" height="24" id="87"></rect>
+        <rect x="-322" y="197" width="20" height="24" id="11"></rect>
+        <rect></rect>
+        <rect x="-282" y="202" width="20" height="9" id="19"></rect>
+        <rect x="-242" y="202" width="20" height="9" id="20"></rect>
+        <rect></rect>
+        <rect x="-202" y="197" width="20" height="24" id="28"></rect>
+        <rect x="-130" y="197" width="20" height="24" id="32"></rect>
+        <rect></rect>
+        <rect x="-90" y="202" width="20" height="9" id="40"></rect>
+        <rect x="-50" y="202" width="20" height="9" id="41"></rect>
+        <rect></rect>
+        <rect x="-10" y="197" width="20" height="24" id="49"></rect>
+        <rect x="134" y="197" width="20" height="24" id="74"></rect>
+        <rect></rect>
+        <rect x="158" y="199" width="20" height="18" id="76"></rect>
+        <rect x="182" y="197" width="20" height="24" id="77"></rect>
+        <rect></rect>
+        <rect x="206" y="202" width="20" height="9" id="79"></rect>
+        <rect x="-346" y="238" width="20" height="24" id="12"></rect>
+        <rect></rect>
+        <rect x="-322" y="243" width="20" height="9" id="14"></rect>
+        <rect x="-298" y="243" width="20" height="9" id="15"></rect>
+        <rect></rect>
+        <rect x="-274" y="238" width="20" height="24" id="17"></rect>
+        <rect x="-250" y="238" width="20" height="24" id="21"></rect>
+        <rect></rect>
+        <rect x="-226" y="243" width="20" height="9" id="23"></rect>
+        <rect x="-202" y="243" width="20" height="9" id="24"></rect>
+        <rect></rect>
+        <rect x="-178" y="238" width="20" height="24" id="26"></rect>
+        <rect x="-154" y="238" width="20" height="24" id="33"></rect>
+        <rect></rect>
+        <rect x="-130" y="243" width="20" height="9" id="35"></rect>
+        <rect x="-106" y="243" width="20" height="9" id="36"></rect>
+        <rect></rect>
+        <rect x="-82" y="238" width="20" height="24" id="38"></rect>
+        <rect x="-58" y="238" width="20" height="24" id="42"></rect>
+        <rect></rect>
+        <rect x="-34" y="243" width="20" height="9" id="44"></rect>
+        <rect x="-10" y="243" width="20" height="9" id="45"></rect>
+        <rect></rect>
+        <rect x="14" y="238" width="20" height="24" id="47"></rect>
+    </g>
+</svg>

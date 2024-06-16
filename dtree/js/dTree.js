@@ -79,7 +79,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         var allNodes = this.allNodes;
         var nodeSize = this.nodeSize;
         var marriageSize = this.marriageSize;
-
+        
         var treenodes = this.tree(source);
         var links = treenodes.links();
         console.log(this.g);
@@ -97,32 +97,67 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         filterLinks.append('path').attr('class', opts.styles.linage).attr('d', this._elbow).attr('id', this._id).attr('data-name', this._name);
 
         var nodes = this.g.selectAll('.node').data(treenodes.descendants()).enter();
-
+        
         this._linkSiblings();
 
         // Draw siblings (marriage)
         this.g.selectAll('.sibling').data(this.siblings).enter().append('path').attr('class', opts.styles.marriage).attr('id', this._id).attr('data-name', this._name).attr('d', _.bind(this._siblingLine, this));
+        nodes.filter(function (d) {
+          console.log(d);
+        })
 
+        let group = document.createElementNS("http://www.w3.org/2000/svg", 'g');
         // Create the node rectangles.
-        nodes.append('foreignObject').filter(function (d) {
-          return d.data.hidden ? false : true;
-        }).attr('x', function (d) {
-          return Math.round(d.x - d.cWidth / 2) + 'px';
+        
+        nodes.filter(function (d) {
+          console.log(d.data.class);
+          return d.data.class == "man" || d.data.class == "ego"
+        }).append('rect')
+        .attr('x', function (d) {
+          return Math.round(d.x - d.cWidth / 2);
         }).attr('y', function (d) {
-          return Math.round(d.y - d.cHeight / 2) + 'px';
+          return Math.round(d.y - d.cHeight * 1.5);
         }).attr('width', function (d) {
-          return d.cWidth + 'px';
+          return d.cWidth;
         }).attr('height', function (d) {
-          return d.cHeight*1.5 + 'px';
+          return d.cHeight*3;
         }).attr('id', function (d) {
           return d.id;
+        })
+        nodes.filter(function (d) {
+          console.log(d.data.class);
+          return d.data.class == "woman"
+        }).append('circle')
+        .attr('cx', function (d) {
+          return Math.round(d.x);
+        }).attr('cy', function (d) {
+          return Math.round(d.y);
+        }).attr('r', function (d) {
+          return d.cWidth / 2;
+        }).attr('id', function (d) {
+          return d.id;
+        })
+        nodes.append('text').filter(function (d) {
+          return d.data.hidden ? false : true;
+        }).attr('x', function (d) {
+          return Math.round(d.x - d.cWidth / 2);
+        }).attr('y', function (d) {
+          return Math.round(d.y);
+        }).attr('width', function (d) {
+          return d.cWidth;
+        }).attr('height', function (d) {
+          return d.cHeight*1.5;
         }).html(function (d) {
-          if (d.data.isMarriage) {
-            return opts.callbacks.marriageRenderer.call(this, d.x, d.y, marriageSize[0], marriageSize[1], d.data.extra, d.data.id, d.data['class']);
-          } else {
-            return opts.callbacks.nodeRenderer.call(this, d.data.name, d.x, d.y, nodeSize[0], nodeSize[1], d.data.extra, d.data.id, d.data['class'], d.data.textClass, opts.callbacks.textRenderer);
-          }
-        }).on('dblclick', function () {
+          return d.data.name;
+        })
+        // .html(function (d) {
+        //   if (d.data.isMarriage) {
+        //     return opts.callbacks.marriageRenderer.call(this, d.x, d.y, marriageSize[0], marriageSize[1], d.data.extra, d.data.id, d.data['class']);
+        //   } else {
+        //     return opts.callbacks.nodeRenderer.call(this, d.data.name, d.x, d.y, nodeSize[0], nodeSize[1], d.data.extra, d.data.id, d.data['class'], d.data.textClass, opts.callbacks.textRenderer);
+        //   }
+        // })
+        .on('dblclick', function () {
           // do not propagate a double click on a node
           // to prevent the zoom from being triggered
           d3.event.stopPropagation();
@@ -384,7 +419,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }
     }]);
-
+    
     return TreeBuilder;
   })();
 

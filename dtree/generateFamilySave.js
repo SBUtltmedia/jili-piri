@@ -204,17 +204,6 @@ a.forEach((item)=>{
             currentChild.class = "woman"
             currentChild.textClass = "emphasis"
             currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "man"}}]
-        } else if (genderCount == 3) {
-            currentChild.name = `${child} +`
-            currentChild.class = "man"
-            currentChild.textClass = "emphasis"
-            currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "woman"}}]
-        } else if (genderCount == 4) {
-            currentChild.name = `${child} -`
-            currentChild.class = "man"
-            currentChild.textClass = "emphasis"
-            currentChild.marriages = [{spouse: {name:`${child} spouse`, class: "woman"}}]
-            
         }
 
         genderCount = ++genderCount;

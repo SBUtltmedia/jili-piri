@@ -1,1417 +1,424 @@
 [
   {
-    "name": "FFF",
+    "name": "0 name",
     "class": "man",
     "textClass": "emphasis",
     "marriages": [
       {
         "spouse": {
-          "name": "FFM",
+          "name": "0 spouse",
           "class": "woman"
-        }
-      }
-    ],
-    "children": [
-      {
-        "name": "FFZ+",
-        "class": "woman",
-        "textClass": "emphasis",
-        "marriages": [
-          {
-            "spouse": {
-              "name": "FFZ+H",
-              "class": "man"
-            }
-          }
-        ],
+        },
         "children": [
           {
-            "name": "FFZ+S",
+            "name": "FF",
             "class": "man",
             "textClass": "emphasis",
             "marriages": [
               {
                 "spouse": {
-                  "name": "FFZ+SW",
+                  "name": "FM",
                   "class": "woman"
-                }
-              }
-            ],
-            "children": [
-              {
-                "name": "FFZ+SS",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ+SSW",
-                      "class": "woman"
-                    }
-                  }
-                ],
+                },
                 "children": [
                   {
-                    "name": "FFZ+SSS",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ+SSSW",
-                          "class": "woman"
-                        }
-                      }
-                    ],
-                    "children": [
-                      {
-                        "name": "FFZ+SSSS",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ+SSSSW",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ+SSSSZ+",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ+SSSSZ+H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ+SSSSZ-",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ+SSSSZ-H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ+SSSSB+",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ+SSSSB+W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ+SSSSB-",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ+SSSSB-W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFZ+SSSZ+",
+                    "name": "FZ",
                     "class": "woman",
                     "textClass": "emphasis",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "FFZ+SSSZ+H",
+                          "name": "FZH",
                           "class": "man"
                         }
                       }
                     ]
                   },
                   {
-                    "name": "FFZ+SSSZ-",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ+SSSZ-H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFZ+SSSB+",
+                    "name": "F",
                     "class": "man",
                     "textClass": "emphasis",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "FFZ+SSSB+W",
+                          "name": "M",
                           "class": "woman"
-                        }
+                        },
+                        "children": [
+                          {
+                            "name": "Z-",
+                            "class": "woman",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Z-H",
+                                  "class": "man"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Z+",
+                            "class": "woman",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Z+H",
+                                  "class": "man"
+                                },
+                                "children": [
+                                  {
+                                    "name": "Z+D",
+                                    "class": "woman",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "Z+DH",
+                                          "class": "man"
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "Z+DD",
+                                            "class": "woman",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "Z+DDH",
+                                                  "class": "man"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "Z+DS",
+                                            "class": "man",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "Z+DSW",
+                                                  "class": "woman"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "Z+S",
+                                    "class": "man",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "Z+SW",
+                                          "class": "woman"
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "Z+SD",
+                                            "class": "woman",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "Z+SDH",
+                                                  "class": "man"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "Z+SS",
+                                            "class": "man",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "Z+SSW",
+                                                  "class": "woman"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "EGO",
+                            "class": "ego",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "W",
+                                  "class": "woman"
+                                },
+                                "children": [
+                                  {
+                                    "name": "D",
+                                    "class": "woman",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "Z+SH",
+                                          "class": "man"
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "DD",
+                                            "class": "woman",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "DDH",
+                                                  "class": "man"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "DS",
+                                            "class": "man",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "DSW",
+                                                  "class": "woman"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "S",
+                                    "class": "man",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "SW",
+                                          "class": "woman"
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "SD",
+                                            "class": "woman",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "SDH",
+                                                  "class": "man"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "SS",
+                                            "class": "man",
+                                            "textClass": "emphasis",
+                                            "marriages": [
+                                              {
+                                                "spouse": {
+                                                  "name": "SSW",
+                                                  "class": "woman"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "B+",
+                            "class": "man",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "B+W",
+                                  "class": "woman"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "B-",
+                            "class": "man",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "B-W",
+                                  "class": "woman"
+                                }
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "name": "FFZ+SSSB-",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ+SSSB-W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "FFZ+SSZ+",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ+SSZ+H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ+SSZ-",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ+SSZ-H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ+SSB+",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ+SSB+W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ+SSB-",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ+SSB-W",
-                      "class": "woman"
-                    }
                   }
                 ]
               }
             ]
           },
           {
-            "name": "FFZ+SZ+",
+            "name": "FFZ",
             "class": "woman",
             "textClass": "emphasis",
             "marriages": [
               {
                 "spouse": {
-                  "name": "FFZ+SZ+H",
+                  "name": "FFZH",
                   "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ+SZ-",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ+SZ-H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ+SB+",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ+SB+W",
-                  "class": "woman"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ+SB-",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ+SB-W",
-                  "class": "woman"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "FFZ-",
-        "class": "woman",
-        "textClass": "emphasis",
-        "marriages": [
-          {
-            "spouse": {
-              "name": "FFZ-H",
-              "class": "man"
-            }
-          }
-        ],
-        "children": [
-          {
-            "name": "FFZ-S",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ-SW",
-                  "class": "woman"
-                }
-              }
-            ],
-            "children": [
-              {
-                "name": "FFZ-SS",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ-SSW",
-                      "class": "woman"
-                    }
-                  }
-                ],
+                },
                 "children": [
                   {
-                    "name": "FFZ-SSS",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ-SSSW",
-                          "class": "woman"
-                        }
-                      }
-                    ],
-                    "children": [
-                      {
-                        "name": "FFZ-SSSS",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ-SSSSW",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ-SSSSZ+",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ-SSSSZ+H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ-SSSSZ-",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ-SSSSZ-H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ-SSSSB+",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ-SSSSB+W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFZ-SSSSB-",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFZ-SSSSB-W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFZ-SSSZ+",
+                    "name": "FFZD",
                     "class": "woman",
                     "textClass": "emphasis",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "FFZ-SSSZ+H",
+                          "name": "FFZDH",
                           "class": "man"
                         }
                       }
                     ]
                   },
                   {
-                    "name": "FFZ-SSSZ-",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ-SSSZ-H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFZ-SSSB+",
+                    "name": "FFZS",
                     "class": "man",
                     "textClass": "emphasis",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "FFZ-SSSB+W",
+                          "name": "FFZSW",
                           "class": "woman"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFZ-SSSB-",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFZ-SSSB-W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "FFZ-SSZ+",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ-SSZ+H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ-SSZ-",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ-SSZ-H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ-SSB+",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ-SSB+W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFZ-SSB-",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFZ-SSB-W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "FFZ-SZ+",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ-SZ+H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ-SZ-",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ-SZ-H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ-SB+",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ-SB+W",
-                  "class": "woman"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFZ-SB-",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFZ-SB-W",
-                  "class": "woman"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "FF",
-        "class": "man",
-        "textClass": "emphasis",
-        "marriages": [
-          {
-            "spouse": {
-              "name": "FM",
-              "class": "woman"
-            }
-          }
-        ],
-        "children": [
-          {
-            "name": "F",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "M",
-                  "class": "woman"
-                }
-              }
-            ],
-            "children": [
-              {
-                "name": "EGO",
-                "class": "ego",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "W",
-                      "class": "woman"
-                    }
-                  }
-                ],
-                "children": [
-                  {
-                    "name": "S",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "SW",
-                          "class": "woman"
-                        }
-                      }
-                    ],
-                    "children": [
-                      {
-                        "name": "SS",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
+                        },
+                        "children": [
                           {
-                            "spouse": {
-                              "name": "SSW",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "SSZ+",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
+                            "name": "FFZSD-",
+                            "class": "woman",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "FFZSD-H",
+                                  "class": "man"
+                                }
+                              }
+                            ]
+                          },
                           {
-                            "spouse": {
-                              "name": "SSZ+H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "SSZ-",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
+                            "name": "FFZSD+",
+                            "class": "woman",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "FFZSD+H",
+                                  "class": "man"
+                                }
+                              }
+                            ]
+                          },
                           {
-                            "spouse": {
-                              "name": "SSZ-H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "SSB+",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
+                            "name": "FFZSS",
+                            "class": "man",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "FFZSSW",
+                                  "class": "woman"
+                                },
+                                "children": [
+                                  {
+                                    "name": "FFZSSD-",
+                                    "class": "woman",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "FFZSSD-H",
+                                          "class": "man"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "FFZSSD+",
+                                    "class": "woman",
+                                    "textClass": "emphasis",
+                                    "marriages": [
+                                      {
+                                        "spouse": {
+                                          "name": "FFZSSD+H",
+                                          "class": "man"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                           {
-                            "spouse": {
-                              "name": "SSB+W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "SSB-",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
+                            "name": "FFZSS+",
+                            "class": "man",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "FFZSS+W",
+                                  "class": "woman"
+                                }
+                              }
+                            ]
+                          },
                           {
-                            "spouse": {
-                              "name": "SSB-W",
-                              "class": "woman"
-                            }
+                            "name": "FFZSS-",
+                            "class": "man",
+                            "textClass": "emphasis",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "FFZSS-W",
+                                  "class": "woman"
+                                }
+                              }
+                            ]
                           }
                         ]
                       }
                     ]
-                  },
-                  {
-                    "name": "SZ+",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "SZ+H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SZ-",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "SZ-H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SB+",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "SB+W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SB-",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "SB-W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
                   }
                 ]
-              },
-              {
-                "name": "Z+",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "Z+H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "Z-",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "Z-H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "B+",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "B+W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "B-",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "B-W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "FZ+",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FZ+H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FZ-",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FZ-H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FB+",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FB+W",
-                  "class": "woman"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FB-",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FB-W",
-                  "class": "woman"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "FFB+",
-        "class": "man",
-        "textClass": "emphasis",
-        "marriages": [
-          {
-            "spouse": {
-              "name": "FFB+W",
-              "class": "woman"
-            }
-          }
-        ],
-        "children": [
-          {
-            "name": "FFB+S",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB+SW",
-                  "class": "woman"
-                }
-              }
-            ],
-            "children": [
-              {
-                "name": "FFB+SS",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB+SSW",
-                      "class": "woman"
-                    }
-                  }
-                ],
-                "children": [
-                  {
-                    "name": "FFB+SSS",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB+SSSW",
-                          "class": "woman"
-                        }
-                      }
-                    ],
-                    "children": [
-                      {
-                        "name": "FFB+SSSS",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB+SSSSW",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB+SSSSZ+",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB+SSSSZ+H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB+SSSSZ-",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB+SSSSZ-H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB+SSSSB+",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB+SSSSB+W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB+SSSSB-",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB+SSSSB-W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB+SSSZ+",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB+SSSZ+H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB+SSSZ-",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB+SSSZ-H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB+SSSB+",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB+SSSB+W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB+SSSB-",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB+SSSB-W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "FFB+SSZ+",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB+SSZ+H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB+SSZ-",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB+SSZ-H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB+SSB+",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB+SSB+W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB+SSB-",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB+SSB-W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "FFB+SZ+",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB+SZ+H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB+SZ-",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB+SZ-H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB+SB+",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB+SB+W",
-                  "class": "woman"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB+SB-",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB+SB-W",
-                  "class": "woman"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "FFB-",
-        "class": "man",
-        "textClass": "emphasis",
-        "marriages": [
-          {
-            "spouse": {
-              "name": "FFB-W",
-              "class": "woman"
-            }
-          }
-        ],
-        "children": [
-          {
-            "name": "FFB-S",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB-SW",
-                  "class": "woman"
-                }
-              }
-            ],
-            "children": [
-              {
-                "name": "FFB-SS",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB-SSW",
-                      "class": "woman"
-                    }
-                  }
-                ],
-                "children": [
-                  {
-                    "name": "FFB-SSS",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB-SSSW",
-                          "class": "woman"
-                        }
-                      }
-                    ],
-                    "children": [
-                      {
-                        "name": "FFB-SSSS",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB-SSSSW",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB-SSSSZ+",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB-SSSSZ+H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB-SSSSZ-",
-                        "class": "woman",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB-SSSSZ-H",
-                              "class": "man"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB-SSSSB+",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB-SSSSB+W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "name": "FFB-SSSSB-",
-                        "class": "man",
-                        "textClass": "emphasis",
-                        "marriages": [
-                          {
-                            "spouse": {
-                              "name": "FFB-SSSSB-W",
-                              "class": "woman"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB-SSSZ+",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB-SSSZ+H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB-SSSZ-",
-                    "class": "woman",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB-SSSZ-H",
-                          "class": "man"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB-SSSB+",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB-SSSB+W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "name": "FFB-SSSB-",
-                    "class": "man",
-                    "textClass": "emphasis",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "FFB-SSSB-W",
-                          "class": "woman"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "FFB-SSZ+",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB-SSZ+H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB-SSZ-",
-                "class": "woman",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB-SSZ-H",
-                      "class": "man"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB-SSB+",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB-SSB+W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              },
-              {
-                "name": "FFB-SSB-",
-                "class": "man",
-                "textClass": "emphasis",
-                "marriages": [
-                  {
-                    "spouse": {
-                      "name": "FFB-SSB-W",
-                      "class": "woman"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "FFB-SZ+",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB-SZ+H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB-SZ-",
-            "class": "woman",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB-SZ-H",
-                  "class": "man"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB-SB+",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB-SB+W",
-                  "class": "woman"
-                }
-              }
-            ]
-          },
-          {
-            "name": "FFB-SB-",
-            "class": "man",
-            "textClass": "emphasis",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "FFB-SB-W",
-                  "class": "woman"
-                }
               }
             ]
           }

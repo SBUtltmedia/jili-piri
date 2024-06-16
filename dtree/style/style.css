@@ -1,5 +1,13 @@
-body {
-    font: 5px sans-serif;
+svg {
+    font: 4px sans-serif;
+}
+rect {
+    fill: lightblue;
+    stroke:rgb(0, 0, 0)
+}
+circle {
+    fill: pink;
+    stroke: rgb(0, 0, 0)
 }
 .linage {
     fill: none;
@@ -29,6 +37,8 @@ body {
 }
 .highlighted {
     stroke: green;
+    
+    
 }
 .selected {
         background-color: rgb(255, 249, 192)!important;

@@ -1,4 +1,10 @@
-let EGOid = 130;
+let EGOid = 37;
+let familyTreeSize = 93
+
+let familialRelationsDictionary = {
+  10: {"warlpiri": [11], "lineage": "F", "name": "wapirra/kirdana"},
+  4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
+  }
 
 function logMovies() {
   fetch("data.json")
@@ -10,27 +16,95 @@ function logMovies() {
   // init (kinshipTree);
 }
 
-function highlight (idList) {
-  //let svg = document.getElementsByTagName("g")[0];
+function highlight (idPair) {
+  
   let svg = document.querySelector("g");
   let paths = document.getElementsByTagName("path");
-  if (idList[1] < EGOid) {
-  idList = idList.reverse();
+  if (idPair[1] < idPair[0]) {
+    idPair = idPair.reverse();
   }
-  console.log(idList);
-  let highlightLine = `#i_${idList[0]}_${idList[1]}`;
+  console.log("idPairH = ", idPair);
+
+  let highlightLine = `#i_${idPair[0]}_${idPair[1]}`;
   let highlightLineEl = document.querySelector(highlightLine);
   let cloneLine = document.createElementNS("http://www.w3.org/2000/svg", 'path');
   //[...highlightLineEl.attributes].forEach( attr => { cloneLine.setAttributeNS("http://www.w3.org/2000/svg", attr.nodeName ,attr.nodeValue) })
   cloneLine.setAttribute("id" , highlightLineEl.getAttribute("id")+"_highlight");
   cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlighted");
   cloneLine.setAttribute("d" , highlightLineEl.getAttribute("d"));
-  //svg.append(cloneLine);
   paths[paths.length - 1].after(cloneLine);
-  //paths.slice(-1).after(cloneLine);
   let highlightNode = d3.select(highlightLine);
 
 }
+
+function cover (idPair) {
+  
+  let svg = document.querySelector("g");
+  let paths = document.getElementsByTagName("path");
+  if (idPair[1] < idPair[0]) {
+    idPair = idPair.reverse();
+  }
+  console.log("idPairC = ", idPair);
+
+  let coverLine = `#i_${idPair[0]}_${idPair[1]}`;
+  let coverLineEl = document.querySelector(coverLine);
+  let cloneLine = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+  //[...highlightLineEl.attributes].forEach( attr => { cloneLine.setAttributeNS("http://www.w3.org/2000/svg", attr.nodeName ,attr.nodeValue) })
+  cloneLine.setAttribute("id" , coverLineEl.getAttribute("id")+"_cover");
+  cloneLine.setAttribute("class" , coverLineEl.getAttribute("class")+" linage");
+  cloneLine.setAttribute("d" , coverLineEl.getAttribute("d"));
+  paths[paths.length - 1].after(cloneLine);
+  let coverNode = d3.select(coverLine);
+
+}
+
+function coverPath (idList) {
+  let length = idList[0].length;
+
+  console.log("lengthC = ", length);
+  console.log("idListC = ", idList[0]);
+
+  for(let n = 0; n < length; n++) {
+
+    if (n == 0) {
+      cover([[EGOid], idList[0][n]]);
+    }
+    else {
+      console.log("idList0C = ", idList[0][n]);
+      console.log("idList1C = ", idList[0][n - 1]);
+      cover([idList[0][n], idList[0][n - 1]]);
+    }
+
+  }
+}
+
+function highlightPath (idList) {
+  
+  let length = idList[0].length;
+
+  console.log("lengthH = ", length);
+  console.log("idListH = ", idList[0]);
+
+  for(let n = 0; n < length; n++) {
+
+    if (n == 0) {
+      highlight([[EGOid], idList[0][n]]);
+    }
+    else {
+      console.log("idList0H = ", idList[0][n]);
+      console.log("idList1H = ", idList[0][n - 1]);
+      highlight([idList[0][n], idList[0][n - 1]]);
+    }
+
+  }
+
+}
+
+
+
+
+
+
 
 function init (treeData) {
 
@@ -49,7 +123,14 @@ function init (treeData) {
         d3.select(`#node${id}`).classed("selected", !d3.select(`#node${id}`).classed("selected"));
 
         //trace path from EGO to id ex. tracePath(EGOid, id); with EGOid set to EGO and id being the id of the clicked node
-        highlight([130, id]);
+        //highlight([EGOid, familialRelationsDictionary[id]["warlpiri"]]);
+        //for(let id = 0; id < familyTreeSize; id++) {
+        //  if(id in familialRelationsDictionary) {
+        //    coverPath([familialRelationsDictionary[id]["warlpiri"]]);
+        //  }
+        //}
+        //console.log(familialRelationsDictionary[id]["warlpiri"]);
+        highlightPath([familialRelationsDictionary[id]["warlpiri"]]);
       },
       marriageClick: function(extra, id) {
         let selectedLine = d3.select(`#node${id}`);
