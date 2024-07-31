@@ -1,4 +1,11 @@
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+  var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; 
+    if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); }
+  }
+     return function (Constructor, protoProps, staticProps) 
+     { if (protoProps) defineProperties(Constructor.prototype, protoProps);
+       if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -82,7 +89,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         
         var treenodes = this.tree(source);
         var links = treenodes.links();
-        console.log(this.g);
+        console.log(this.g.selectAll('.node'));
         // Create the link lines.
         var allLinks = this.g.selectAll('.link')
         var dataLinks = allLinks.data(links)
@@ -110,9 +117,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         // Create the node rectangles.
         
         nodes.filter(function (d) {
-          console.log(d.data.class);
+          //console.log(d.data.name);
+          //console.log(d.data.class);
+           if(d.data.name == "FM") {
+             console.log(d);
+           }
           return d.data.class == "man" || d.data.class == "ego"
-        }).append('rect')
+        }).append('rect').attr('class', "clickable")
         .attr('x', function (d) {
           return Math.round(d.x - d.cWidth / 2);
         }).attr('y', function (d) {
@@ -122,12 +133,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }).attr('height', function (d) {
           return d.cHeight*3;
         }).attr('id', function (d) {
-          return d.id;
-        })
+          return `node${d.id}`;
+        }).on("click", nodeClick)
         nodes.filter(function (d) {
           console.log(d.data.class);
           return d.data.class == "woman"
-        }).append('circle')
+        }).append('circle').attr('class', "clickable")
         .attr('cx', function (d) {
           return Math.round(d.x);
         }).attr('cy', function (d) {
@@ -135,12 +146,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }).attr('r', function (d) {
           return d.cWidth / 2;
         }).attr('id', function (d) {
-          return d.id;
-        })
+          return `node${d.id}`;
+        }).on("click", nodeClick)
         nodes.append('text').filter(function (d) {
           return d.data.hidden ? false : true;
-        }).attr('x', function (d) {
-          return Math.round(d.x - d.cWidth / 2);
+        }).attr("text-anchor", "middle")
+        .attr("style", "fill: black;")
+        .attr('x', function (d) {
+          return Math.round((d.x - d.cWidth / 2) + 9);
         }).attr('y', function (d) {
           return Math.round(d.y);
         }).attr('width', function (d) {
@@ -150,6 +163,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }).html(function (d) {
           return d.data.name;
         })
+        //Object.keys(nodes).forEach(console.log);
+        
+
+
+        
+        nodes.filter(function (d) {
+          if (d.data.father) {
+            console.log(d.data.id);
+          }
+          return d.data.father;
+        }).append('rect').attr('class', "clickable")
+        .attr('x', function (d) {
+          return Math.round(d.x - d.cWidth / 2);
+        }).attr('y', function (d) {
+          return Math.round(d.y - d.cHeight * 1.5) - 30;
+        }).attr('width', function (d) {
+          return d.cWidth;
+        }).attr('height', function (d) {
+          return d.cHeight*3;
+        }).attr('id', function (d) {
+          return `fode${d.id}`;
+        }).on("click", nodeClick)
+        
+
         // .html(function (d) {
         //   if (d.data.isMarriage) {
         //     return opts.callbacks.marriageRenderer.call(this, d.x, d.y, marriageSize[0], marriageSize[1], d.data.extra, d.data.id, d.data['class']);
@@ -336,7 +373,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }], [{
       key: '_nodeHeightSeperation',
       value: function _nodeHeightSeperation(nodeWidth, nodeMaxHeight) {
-        return nodeMaxHeight + 25;
+        return (nodeMaxHeight + 25) * 4;
       }
     }, {
       key: '_nodeSize',
@@ -429,7 +466,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     init: function init(data) {
       var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
-
+      options.height = 1600;
+      console.log(options);
       var opts = _.defaultsDeep(options || {}, {
         target: '#graph',
         debug: false,
@@ -535,7 +573,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       };
 
       var reconstructTree = function reconstructTree(person, parent) {
-
+        
         // convert to person to d3 node
         var node = {
           name: person.name,
@@ -592,12 +630,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           };
 
           var sp = marriage.spouse;
-
+          //console.log(person.name);
+          
+          console.log(sp);
+          
           var spouse = {
             name: sp.name,
             id: id++,
             hidden: false,
             noParent: true,
+            mother: sp.mother,
+            father: sp.father,
             children: [],
             textClass: sp.textClass ? sp.textClass : opts.styles.text,
             'class': sp['class'] ? sp['class'] : opts.styles.node,

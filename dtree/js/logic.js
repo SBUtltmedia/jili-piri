@@ -1,4 +1,4 @@
-let EGOid = 37;
+let EGOid = 31;
 let familyTreeSize = 93
 
 let familialRelationsDictionary = {
@@ -15,6 +15,31 @@ function logMovies() {
   // const kinshipTree = response.json();
   // init (kinshipTree);
 }
+
+
+
+function nodeClick(data, ...other) {
+    let id = data.id;
+    //let selectedNode = d3.select(`#node${id}`);
+        console.log(id);
+        // d3.select(`#node${id}`).classed("man", false);
+        // d3.select(`#node${id}`).classed("woman", false);
+        d3.selectAll(".selected").classed("selected", false);
+        d3.select(`#node${id}`).classed("selected", !d3.select(`#node${id}`).classed("selected"));
+
+        //trace path from EGO to id ex. tracePath(EGOid, id); with EGOid set to EGO and id being the id of the clicked node
+        //highlight([EGOid, familialRelationsDictionary[id]["warlpiri"]]);
+        //for(let id = 0; id < familyTreeSize; id++) {
+        //  if(id in familialRelationsDictionary) {
+        //    coverPath([familialRelationsDictionary[id]["warlpiri"]]);
+        //  }
+        //}
+        //console.log(familialRelationsDictionary[id]["warlpiri"]);
+        //highlightPath([familialRelationsDictionary[id]["warlpiri"]]);
+}
+
+
+
 
 function highlight (idPair) {
   
@@ -115,22 +140,7 @@ function init (treeData) {
     width: 1200,
     callbacks: {
       nodeClick: function(name, extra, id) {
-        let selectedNode = d3.select(`#node${id}`);
-        console.log(id);
-        // d3.select(`#node${id}`).classed("man", false);
-        // d3.select(`#node${id}`).classed("woman", false);
-        d3.selectAll(".selected").classed("selected", false);
-        d3.select(`#node${id}`).classed("selected", !d3.select(`#node${id}`).classed("selected"));
-
-        //trace path from EGO to id ex. tracePath(EGOid, id); with EGOid set to EGO and id being the id of the clicked node
-        //highlight([EGOid, familialRelationsDictionary[id]["warlpiri"]]);
-        //for(let id = 0; id < familyTreeSize; id++) {
-        //  if(id in familialRelationsDictionary) {
-        //    coverPath([familialRelationsDictionary[id]["warlpiri"]]);
-        //  }
-        //}
-        //console.log(familialRelationsDictionary[id]["warlpiri"]);
-        highlightPath([familialRelationsDictionary[id]["warlpiri"]]);
+        
       },
       marriageClick: function(extra, id) {
         let selectedLine = d3.select(`#node${id}`);

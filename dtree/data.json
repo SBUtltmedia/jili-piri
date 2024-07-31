@@ -18,7 +18,9 @@
               {
                 "spouse": {
                   "name": "FM",
-                  "class": "woman"
+                  "class": "woman",
+                  "mother": {"class": "woman", "name": "", "textClass": "emphasis"},
+                  "father": {"class": "man", "name": "", "textClass": "emphasis"}
                 },
                 "children": [
                   {
