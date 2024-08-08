@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0,0,1200,1600"
+   style="touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+   version="1.1"
+   id="svg94"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs94" />
+  <style
+     id="style1">
+        @import url(./style/style.css);
+    </style>
+  <g
+     transform="translate(673.0017,62.241981)"
+     id="g94">
+    <path
+       class="linage"
+       d="m -168,240 v 0 -60 H 0 v -60"
+       id="i_2_4"
+       data-name="_FF" />
+    <path
+       class="linage"
+       d="m 56,240 v 0 -60 H 0 v -60"
+       id="i_2_64"
+       data-name="_FFZ" />
+    <path
+       class="linage"
+       d="m -192,360 v 0 -60 h 36 v -60"
+       id="i_5_7"
+       data-name="_FZ" />
+    <path
+       class="linage"
+       d="m -144,360 v 0 -60 h -12 v -60"
+       id="i_5_10"
+       data-name="_F" />
+    <path
+       class="linage"
+       d="m 120,360 v 0 -60 h 36 v -60"
+       id="i_65_67"
+       data-name="_FFZD" />
+    <path
+       class="linage"
+       d="m 168,360 v 0 -60 h -12 v -60"
+       id="i_65_70"
+       data-name="_FFZS" />
+    <path
+       class="linage"
+       d="m -312,480 v 0 -60 h 180 v -60"
+       id="i_11_13"
+       data-name="_Z-" />
+    <path
+       class="linage"
+       d="m -264,480 v 0 -60 h 132 v -60"
+       id="i_11_16"
+       data-name="_Z+" />
+    <path
+       class="linage"
+       d="m -120,480 v 0 -60 h -12 v -60"
+       id="i_11_37"
+       data-name="_EGO" />
+    <path
+       class="linage"
+       d="m -24,480 v 0 -60 h -108 v -60"
+       id="i_11_58"
+       data-name="_B+" />
+    <path
+       class="linage"
+       d="m 24,480 v 0 -60 h -156 v -60"
+       id="i_11_61"
+       data-name="_B-" />
+    <path
+       class="linage"
+       d="m 72,480 v 0 -60 h 108 v -60"
+       id="i_71_73"
+       data-name="_FFZSD-" />
+    <path
+       class="linage"
+       d="m 120,480 v 0 -60 h 60 v -60"
+       id="i_71_76"
+       data-name="_FFZSD+" />
+    <path
+       class="linage"
+       d="m 168,480 v 0 -60 h 12 v -60"
+       id="i_71_79"
+       data-name="_FFZSS" />
+    <path
+       class="linage"
+       d="m 216,480 v 0 -60 h -36 v -60"
+       id="i_71_88"
+       data-name="_FFZSS+" />
+    <path
+       class="linage"
+       d="m 264,480 v 0 -60 h -84 v -60"
+       id="i_71_91"
+       data-name="_FFZSS-" />
+    <path
+       class="linage"
+       d="m -312,600 v 0 -60 h 60 v -60"
+       id="i_17_19"
+       data-name="_Z+D" />
+    <path
+       class="linage"
+       d="m -232,600 v 0 -60 h -20 v -60"
+       id="i_17_28"
+       data-name="_Z+S" />
+    <path
+       class="linage"
+       d="m -120,600 v 0 -60 h 60 v -60"
+       id="i_38_40"
+       data-name="_D" />
+    <path
+       class="linage"
+       d="m -40,600 v 0 -60 h -20 v -60"
+       id="i_38_49"
+       data-name="_S" />
+    <path
+       class="linage"
+       d="m 144,600 v 0 -60 h 36 v -60"
+       id="i_80_82"
+       data-name="_FFZSSD-" />
+    <path
+       class="linage"
+       d="m 192,600 v 0 -60 h -12 v -60"
+       id="i_80_85"
+       data-name="_FFZSSD+" />
+    <path
+       class="linage"
+       d="m -336,720 v 0 -60 h 36 v -60"
+       id="i_20_22"
+       data-name="_Z+DD" />
+    <path
+       class="linage"
+       d="m -288,720 v 0 -60 h -12 v -60"
+       id="i_20_25"
+       data-name="_Z+DS" />
+    <path
+       class="linage"
+       d="m -240,720 v 0 -60 h 36 v -60"
+       id="i_29_31"
+       data-name="_Z+SD" />
+    <path
+       class="linage"
+       d="m -192,720 v 0 -60 h -12 v -60"
+       id="i_29_34"
+       data-name="_Z+SS" />
+    <path
+       class="linage"
+       d="m -144,720 v 0 -60 h 36 v -60"
+       id="i_41_43"
+       data-name="_DD" />
+    <path
+       class="linage"
+       d="m -96,720 v 0 -60 h -12 v -60"
+       id="i_41_46"
+       data-name="_DS" />
+    <path
+       class="linage"
+       d="m -48,720 v 0 -60 h 36 v -60"
+       id="i_50_52"
+       data-name="_SD" />
+    <path
+       class="linage"
+       d="m 0,720 v 0 -60 h -12 v -60"
+       id="i_50_55"
+       data-name="_SS" />
+    <path
+       class="marriage"
+       id="i_7_9"
+       data-name="_"
+       d="m -192,360 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_13_15"
+       data-name="_"
+       d="m -312,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_22_24"
+       data-name="_"
+       d="m -336,720 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_25_27"
+       data-name="_"
+       d="m -288,720 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_19_21"
+       data-name="_"
+       d="m -312,600 h 12 v 0 0 0 h 0 v 0 0 0 h 28 v 0" />
+    <path
+       class="marriage"
+       id="i_31_33"
+       data-name="_"
+       d="m -240,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_34_36"
+       data-name="_"
+       d="m -192,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_28_30"
+       data-name="_"
+       d="m -232,600 h 12 v 0 0 0 h 16 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_16_18"
+       data-name="_"
+       d="m -264,480 h 12 v 0 0 0 h 0 v 0 0 0 h 60 v 0" />
+    <path
+       class="marriage"
+       id="i_43_45"
+       data-name="_"
+       d="m -144,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_46_48"
+       data-name="_"
+       d="m -96,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_40_42"
+       data-name="_"
+       d="m -120,600 h 12 v 0 0 0 h 0 v 0 0 0 h 28 v 0" />
+    <path
+       class="marriage"
+       id="i_52_54"
+       data-name="_"
+       d="m -48,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_55_57"
+       data-name="_"
+       d="m 0,720 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_49_51"
+       data-name="_"
+       d="m -40,600 h 12 v 0 0 0 h 16 v 0 0 0 H 0 v 0" />
+    <path
+       class="marriage"
+       id="i_37_39"
+       data-name="_"
+       d="m -120,480 h 12 v 0 0 0 h 48 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_58_60"
+       data-name="_"
+       d="m -24,480 h 12 v 0 0 0 h 0 v 0 0 0 H 0 v 0" />
+    <path
+       class="marriage"
+       id="i_61_63"
+       data-name="_"
+       d="m 24,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_10_12"
+       data-name="_"
+       d="m -144,360 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_4_6"
+       data-name="_"
+       d="m -168,240 h 12 v 0 0 0 0 0 0 0 h 100 v 0" />
+    <path
+       class="marriage"
+       id="i_67_69"
+       data-name="_"
+       d="m 120,360 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_73_75"
+       data-name="_"
+       d="m 72,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_76_78"
+       data-name="_"
+       d="m 120,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_82_84"
+       data-name="_"
+       d="m 144,600 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_85_87"
+       data-name="_"
+       d="m 192,600 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_79_81"
+       data-name="_"
+       d="m 168,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_88_90"
+       data-name="_"
+       d="m 216,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_91_93"
+       data-name="_"
+       d="m 264,480 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_70_72"
+       data-name="_"
+       d="m 168,360 h 12 v 0 0 0 h 0 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_64_66"
+       data-name="_"
+       d="m 56,240 h 12 v 0 0 0 h 88 v 0 0 0 h 12 v 0" />
+    <path
+       class="marriage"
+       id="i_1_3"
+       data-name="_"
+       d="M -12,120 H 0 v 0 0 0 0 0 0 0 h 12 v 0" />
+    <rect
+       class="clickable"
+       x="-22"
+       y="113"
+       width="20"
+       height="15"
+       id="node1" />
+    <rect
+       class="clickable"
+       x="-178"
+       y="233"
+       width="20"
+       height="15"
+       id="node2" />
+    <rect
+       class="clickable"
+       x="158"
+       y="233"
+       width="20"
+       height="15"
+       id="node91" />
+    <rect
+       class="clickable"
+       x="-178"
+       y="353"
+       width="20"
+       height="15"
+       id="node5" />
+    <rect
+       class="clickable"
+       x="-154"
+       y="353"
+       width="20"
+       height="15"
+       id="node6" />
+    <rect
+       class="clickable"
+       x="134"
+       y="353"
+       width="20"
+       height="15"
+       id="node65" />
+    <rect
+       class="clickable"
+       x="158"
+       y="353"
+       width="20"
+       height="15"
+       id="node66" />
+    <rect
+       class="clickable"
+       x="-298"
+       y="473"
+       width="20"
+       height="15"
+       id="node9" />
+    <rect
+       class="clickable"
+       x="-202"
+       y="473"
+       width="20"
+       height="15"
+       id="node30" />
+    <rect
+       class="clickable"
+       x="-130"
+       y="473"
+       width="20"
+       height="15"
+       id="node31" />
+    <rect
+       class="clickable"
+       x="-34"
+       y="473"
+       width="20"
+       height="15"
+       id="node52" />
+    <rect
+       class="clickable"
+       x="14"
+       y="473"
+       width="20"
+       height="15"
+       id="node55" />
+    <rect
+       class="clickable"
+       x="86"
+       y="473"
+       width="20"
+       height="15"
+       id="node69" />
+    <rect
+       class="clickable"
+       x="134"
+       y="473"
+       width="20"
+       height="15"
+       id="node72" />
+    <rect
+       class="clickable"
+       x="158"
+       y="473"
+       width="20"
+       height="15"
+       id="node73" />
+    <rect
+       class="clickable"
+       x="206"
+       y="473"
+       width="20"
+       height="15"
+       id="node82" />
+    <rect
+       class="clickable"
+       x="254"
+       y="473"
+       width="20"
+       height="15"
+       id="node85" />
+    <rect
+       class="clickable"
+       x="-282"
+       y="593"
+       width="20"
+       height="15"
+       id="node19" />
+    <rect
+       class="clickable"
+       x="-242"
+       y="593"
+       width="20"
+       height="15"
+       id="node20" />
+    <rect
+       class="clickable"
+       x="-90"
+       y="593"
+       width="20"
+       height="15"
+       id="node40" />
+    <rect
+       class="clickable"
+       x="-50"
+       y="593"
+       width="20"
+       height="15"
+       id="node41" />
+    <rect
+       class="clickable"
+       x="158"
+       y="593"
+       width="20"
+       height="15"
+       id="node76" />
+    <rect
+       class="clickable"
+       x="206"
+       y="593"
+       width="20"
+       height="15"
+       id="node79" />
+    <rect
+       class="clickable"
+       x="-322"
+       y="713"
+       width="20"
+       height="15"
+       id="node14" />
+    <rect
+       class="clickable"
+       x="-298"
+       y="713"
+       width="20"
+       height="15"
+       id="node15" />
+    <rect
+       class="clickable"
+       x="-226"
+       y="713"
+       width="20"
+       height="15"
+       id="node23" />
+    <rect
+       class="clickable"
+       x="-202"
+       y="713"
+       width="20"
+       height="15"
+       id="node24" />
+    <rect
+       class="clickable"
+       x="-130"
+       y="713"
+       width="20"
+       height="15"
+       id="node35" />
+    <rect
+       class="clickable"
+       x="-106"
+       y="713"
+       width="20"
+       height="15"
+       id="node36" />
+    <rect
+       class="clickable"
+       x="-34"
+       y="713"
+       width="20"
+       height="15"
+       id="node44" />
+    <rect
+       class="clickable"
+       x="-10"
+       y="713"
+       width="20"
+       height="15"
+       id="node45" />
+    <circle
+       class="clickable"
+       cx="12"
+       cy="120"
+       r="10"
+       id="node93" />
+    <circle
+       class="clickable"
+       cx="-56"
+       cy="240"
+       r="10"
+       id="node61" />
+    <circle
+       class="clickable"
+       cx="56"
+       cy="240"
+       r="10"
+       id="node62" />
+    <circle
+       class="clickable"
+       cx="-192"
+       cy="360"
+       r="10"
+       id="node3" />
+    <circle
+       class="clickable"
+       cx="-120"
+       cy="360"
+       r="10"
+       id="node59" />
+    <circle
+       class="clickable"
+       cx="120"
+       cy="360"
+       r="10"
+       id="node63" />
+    <circle
+       class="clickable"
+       cx="192"
+       cy="360"
+       r="10"
+       id="node89" />
+    <circle
+       class="clickable"
+       cx="-312"
+       cy="480"
+       r="10"
+       id="node7" />
+    <circle
+       class="clickable"
+       cx="-264"
+       cy="480"
+       r="10"
+       id="node10" />
+    <circle
+       class="clickable selected"
+       cx="-48"
+       cy="480"
+       r="10"
+       id="node51" />
+    <circle
+       class="clickable"
+       cx="0"
+       cy="480"
+       r="10"
+       id="node54" />
+    <circle
+       class="clickable"
+       cx="48"
+       cy="480"
+       r="10"
+       id="node57" />
+    <circle
+       class="clickable"
+       cx="72"
+       cy="480"
+       r="10"
+       id="node67" />
+    <circle
+       class="clickable"
+       cx="120"
+       cy="480"
+       r="10"
+       id="node70" />
+    <circle
+       class="clickable"
+       cx="192"
+       cy="480"
+       r="10"
+       id="node81" />
+    <circle
+       class="clickable"
+       cx="240"
+       cy="480"
+       r="10"
+       id="node84" />
+    <circle
+       class="clickable"
+       cx="288"
+       cy="480"
+       r="10"
+       id="node87" />
+    <circle
+       class="clickable"
+       cx="-312"
+       cy="600"
+       r="10"
+       id="node11" />
+    <circle
+       class="clickable"
+       cx="-192"
+       cy="600"
+       r="10"
+       id="node28" />
+    <circle
+       class="clickable"
+       cx="-120"
+       cy="600"
+       r="10"
+       id="node32" />
+    <circle
+       class="clickable"
+       cx="0"
+       cy="600"
+       r="10"
+       id="node49" />
+    <circle
+       class="clickable"
+       cx="144"
+       cy="600"
+       r="10"
+       id="node74" />
+    <circle
+       class="clickable"
+       cx="192"
+       cy="600"
+       r="10"
+       id="node77" />
+    <circle
+       class="clickable"
+       cx="-336"
+       cy="720"
+       r="10"
+       id="node12" />
+    <circle
+       class="clickable"
+       cx="-264"
+       cy="720"
+       r="10"
+       id="node17" />
+    <circle
+       class="clickable"
+       cx="-240"
+       cy="720"
+       r="10"
+       id="node21" />
+    <circle
+       class="clickable"
+       cx="-168"
+       cy="720"
+       r="10"
+       id="node26" />
+    <circle
+       class="clickable"
+       cx="-144"
+       cy="720"
+       r="10"
+       id="node33" />
+    <circle
+       class="clickable"
+       cx="-72"
+       cy="720"
+       r="10"
+       id="node38" />
+    <circle
+       class="clickable"
+       cx="-48"
+       cy="720"
+       r="10"
+       id="node42" />
+    <circle
+       class="clickable"
+       cx="24"
+       cy="720"
+       r="10"
+       id="node47" />
+    <text
+       id="text1" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-13"
+       y="120"
+       width="20"
+       height="7.5"
+       id="text2">0 name</text>
+    <text
+       id="text3" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="11"
+       y="120"
+       width="20"
+       height="7.5"
+       id="text4">0 spouse</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-169"
+       y="240"
+       width="20"
+       height="7.5"
+       id="text5">FF</text>
+    <text
+       id="text6" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-57"
+       y="240"
+       width="20"
+       height="7.5"
+       id="text7">FM</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="55"
+       y="240"
+       width="20"
+       height="7.5"
+       id="text8">FFZ</text>
+    <text
+       id="text9" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="167"
+       y="240"
+       width="20"
+       height="7.5"
+       id="text10">FFZH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-193"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text11">FZ</text>
+    <text
+       id="text12" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-169"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text13">FZH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-145"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text14">F</text>
+    <text
+       id="text15" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-121"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text16">M</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="119"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text17">FFZD</text>
+    <text
+       id="text18" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="143"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text19">FFZDH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="167"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text20">FFZS</text>
+    <text
+       id="text21" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="191"
+       y="360"
+       width="20"
+       height="7.5"
+       id="text22">FFZSW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-313"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text23">Z-</text>
+    <text
+       id="text24" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-289"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text25">Z-H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-265"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text26">Z+</text>
+    <text
+       id="text27" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-193"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text28">Z+H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-121"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text29">EGO</text>
+    <text
+       id="text30" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-49"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text31">W</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-25"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text32">B+</text>
+    <text
+       id="text33" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-1"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text34">B+W</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="23"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text35">B-</text>
+    <text
+       id="text36" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="47"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text37">B-W</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="71"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text38">FFZSD-</text>
+    <text
+       id="text39" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="95"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text40">FFZSD-H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="119"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text41">FFZSD+</text>
+    <text
+       id="text42" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="143"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text43">FFZSD+H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="167"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text44">FFZSS</text>
+    <text
+       id="text45" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="191"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text46">FFZSSW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="215"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text47">FFZSS+</text>
+    <text
+       id="text48" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="239"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text49">FFZSS+W</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="263"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text50">FFZSS-</text>
+    <text
+       id="text51" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="287"
+       y="480"
+       width="20"
+       height="7.5"
+       id="text52">FFZSS-W</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-313"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text53">Z+D</text>
+    <text
+       id="text54" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-273"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text55">Z+DH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-233"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text56">Z+S</text>
+    <text
+       id="text57" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-193"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text58">Z+SW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-121"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text59">D</text>
+    <text
+       id="text60" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-81"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text61">Z+SH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-41"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text62">S</text>
+    <text
+       id="text63" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-1"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text64">SW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="143"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text65">FFZSSD-</text>
+    <text
+       id="text66" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="167"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text67">FFZSSD-H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="191"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text68">FFZSSD+</text>
+    <text
+       id="text69" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="215"
+       y="600"
+       width="20"
+       height="7.5"
+       id="text70">FFZSSD+H</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-337"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text71">Z+DD</text>
+    <text
+       id="text72" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-313"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text73">Z+DDH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-289"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text74">Z+DS</text>
+    <text
+       id="text75" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-265"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text76">Z+DSW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-241"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text77">Z+SD</text>
+    <text
+       id="text78" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-217"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text79">Z+SDH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-193"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text80">Z+SS</text>
+    <text
+       id="text81" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-169"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text82">Z+SSW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-145"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text83">DD</text>
+    <text
+       id="text84" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-121"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text85">DDH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-97"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text86">DS</text>
+    <text
+       id="text87" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-73"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text88">DSW</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-49"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text89">SD</text>
+    <text
+       id="text90" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-25"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text91">SDH</text>
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="-1"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text92">SS</text>
+    <text
+       id="text93" />
+    <text
+       text-anchor="middle"
+       style="fill:#000000"
+       x="23"
+       y="720"
+       width="20"
+       height="7.5"
+       id="text94">SSW</text>
+    <rect
+       class="clickable"
+       x="-66"
+       y="203"
+       width="20"
+       height="15"
+       id="fode61" />
+  </g>
+</svg>
