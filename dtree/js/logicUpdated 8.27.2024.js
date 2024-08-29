@@ -3,21 +3,19 @@ let familyTreeSize = 93
 
 let familialRelationsDictionary = {
   59: {"warlpiri": [59], "lineage": "FMBWD", "name": "wapirra/kirdana"},
-  93: {"warlpiri": [59], "lineage": "FFZHZ+", "name": "wapirra/kirdana"}
+  93: {"warlpiri": [59], "lineage": "MBWDM", "name": "wapirra/kirdana"}
   //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
   }
 
 let genderDictionary = {
-  "Z": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
-  "M": {"gender": "female", "generation": false, "level": 0, "opposite": "D"},
-  "D": {"gender": "female", "generation": false, "level": 2, "opposite": "M"},
-  "W": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
-  "B": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-  "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
-  "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
-  "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-  "+": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-  "-": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"}
+  "Z": {"gender": "female", "generation": true, "level": 1},
+  "M": {"gender": "female", "generation": false, "level": 0},
+  "D": {"gender": "female", "generation": false, "level": 2},
+  "W": {"gender": "female", "generation": true, "level": 1},
+  "B": {"gender": "male", "generation": true, "level": 1},
+  "F": {"gender": "male", "generation": false, "level": 0},
+  "S": {"gender": "male", "generation": false, "level": 2},
+  "H": {"gender": "male", "generation": true, "level": 1},
 }
 
 function logMovies() {
@@ -50,8 +48,8 @@ function nodeClick(data, ...other) {
         }
         //console.log(familialRelationsDictionary[id]["warlpiri"]);
         highlightPath([familialRelationsDictionary[id]["warlpiri"]]);
-        //console.log("[familialRelationsDictionary[id][\"warlpiri\"]]: ", [familialRelationsDictionary[id]["warlpiri"]])
-        console.log(toJiliwiri([familialRelationsDictionary[id]["lineage"]]));
+        console.log("[familialRelationsDictionary[id][\"warlpiri\"]]: ", [familialRelationsDictionary[id]["warlpiri"]])
+        reduce([familialRelationsDictionary[id]["lineage"]]);
 }
 
 
@@ -143,56 +141,21 @@ function highlightPath (idList) {
 
 function toJiliwiri (lineage) { //converts the passed lineage to Jiliwiri
   let lineageStr = lineage.join("");
+  lineageStrLength = lineageStr.length;
   console.log("lineageStr: ", lineageStr);
-  let adjustedStr = "";
-  let expandedStr = "";
-  let firstReducedStr = "";
-  let secondReducedStr = "";
-  let retStr = "";
 
-  adjustedStr = adjustForSpouse(lineageStr);
-  expandedStr = expandParse(adjustedStr);
-  firstReducedStr = reduce(expandedStr);
-  let firstReducedStrLength = firstReducedStr.length;
-  //console.log("firstReducedStr: ", firstReducedStr);
-  //console.log("firstReducedStrLength: ", firstReducedStrLength);
+  lastChar = lineageStr.charAt(lineageStrLength-1);
+  SecondLastChar = lineageStr.charAt(lineageStrLength - 2);
+  ThirdLastChar = lineageStr.charAt(lineageStrLength - 3);
 
-  if (firstReducedStr.charAt(firstReducedStrLength - 1) == "+" || firstReducedStr.charAt(firstReducedStrLength - 1) == "-") {
-    retStr = firstReducedStr.substring(0, firstReducedStrLength - 1) + invertSeniority(firstReducedStr.charAt(firstReducedStrLength - 1));
-    console.log("sentToInvertSeniority");
-    secondReducedStr = reduce(retStr);
-    retStr = secondReducedStr;
-    if (retStr == "") {
-      retStr = "EGO"
-    }
-    //console.log("retStr: ", retStr);
-    return(retStr);
-  }
-  else {
-    for(n = firstReducedStrLength - 1; n >= 0; n--) {
-      if (firstReducedStr.charAt(n) == "M" || firstReducedStr.charAt(n) == "F" || firstReducedStr.charAt(n) == "D" || firstReducedStr.charAt(n) == "S") {
-        retStr = firstReducedStr.substring(0, n) + invertParentChild(firstReducedStr.charAt(n)) + firstReducedStr.substring(n + 1);
-        console.log("sentToInvertParent-Child");
-        console.log("sentLineage", retStr);
-        secondReducedStr = reduce(retStr);
-        retStr = secondReducedStr;
-        if (retStr == "") {
-          retStr = "EGO"
-        }
-        //console.log("retStr: ", retStr);
-        return(retStr);
-      }
-    }
-    //console.log("toJiliwiri did not return");
 
-  }
 
 }
 
 //expansion rules:
 
 function expandParse (lineage) { //loops through lineage, checks for pairs to expand, calls expand to expand the pairs
-  let lineageStr = lineage;
+  let lineageStr = lineage.join("");
   let lineageLength = lineageStr.length;
   let addStr = "";
 
@@ -205,15 +168,13 @@ function expandParse (lineage) { //loops through lineage, checks for pairs to ex
       n = 0;
     }
   }
-  //console.log("lineageStr: ", lineageStr);
-  return(lineageStr);
+  console.log("lineageStr: ", lineageStr);
 }
 
 function expand (lineage) { // expands the pair to include "bridge" terms
   let lineagePair = lineage.join("");
-  //console.log("lineagePair: ", lineagePair);
   let retString = "";
-  //console.log("lineage: ", lineage);
+  console.log("lineage: ", lineage);
 
   if (lineagePair.charAt(1) == "F") {
     retString = (lineagePair.charAt(0) + "B" + lineagePair.charAt(1));
@@ -227,13 +188,13 @@ function expand (lineage) { // expands the pair to include "bridge" terms
   else if (lineagePair.charAt(1) == "D") {
     retString = (lineagePair.charAt(0) + "W" + lineagePair.charAt(1));
   }
-  //console.log("retSTring: ", retString);
+  console.log("retSTring: ", retString);
   return(retString);
 
 }
 
 function adjustForSpouse (lineage) { //changes "W" to "MBD" and "H" to "FZS"
-  let lineageStr = lineage;
+  let lineageStr = lineage.join("");
   let lineageLength = lineageStr.length;
 
   for(let n = 0; n < lineageLength; n++) {
@@ -246,61 +207,40 @@ function adjustForSpouse (lineage) { //changes "W" to "MBD" and "H" to "FZS"
       n = 0
     }
   }
-  //console.log("lineageStr: ", lineageStr);
-  return(lineageStr);
+  console.log("lineageStr: ", lineageStr);
 }
 
 function reduce (lineage) { // removes pairs that cancel each other out such as "ZDM" which means "Z"
-  let lineageStr = lineage;
+  let lineageStr = lineage.join("");
   let lineageLength = lineageStr.length;
-  console.log("pickedUp");
+
   for(n = 1; n < lineageLength; n++) {
     try {
-      console.log("n - 1: ", genderDictionary[lineageStr.charAt(n - 1)]);
-      console.log("n: ", genderDictionary[lineageStr.charAt(n)]);
+      console.log("n - 1 level: ", genderDictionary[lineageStr.charAt(n - 1)]["level"]);
+      console.log("n level: ", genderDictionary[lineageStr.charAt(n)]["level"]);
       if ((genderDictionary[lineageStr.charAt(n - 1)]["level"] - genderDictionary[lineageStr.charAt(n)]["level"]) == 2 || (genderDictionary[lineageStr.charAt(n - 1)]["level"] - genderDictionary[lineageStr.charAt(n)]["level"]) == -2) {
         lineageStr = lineageStr.substring(0, n - 1) + lineageStr.substring(n + 1);
         n = 0;
-        console.log("pickedUP");
-      }
-      if((lineageStr.charAt(n - 1) == "Z" && (lineageStr.charAt(n) == "B")) || (lineageStr.charAt(n - 1) == "B" && (lineageStr.charAt(n) == "Z"))) {
-        console.log("picked up");
-        lineageStr = lineageStr.substring(0, n - 1) + lineageStr.substring(n + 1);
-        n = 0;
       }
     }
-    catch(err) {
+  catch(err) {
 
-    }
+  }
   }
   
 
-  //console.log("lineageStr: ", lineageStr);
-  return(lineageStr);
+  console.log("lineageStr: ", lineageStr);
 }
 
 //inversion rules:
 
-function invertParentChild (lineage) { // inverts the Parent-Child Relationship
-  //console.log("lineage: ", lineage);
-  if(genderDictionary[lineage]["opposite"] != "N/A") {
-    return(genderDictionary[lineage]["opposite"]);
-  }
-  else {
-    return("N/A");
-  }
+function invertParentChild (lineage) {
+
 }
 
-function invertSeniority (lineage) { // inverts the Seniority Relationship
-  if (lineage == "+") {
-    return("-");
-  }
-  if (lineage == "-") {
-    return("+");
-  }
-}
+function invertSeniority (lineage) {
 
-// dictionary-checking functions:
+}
 
 function inWarlpiri (lineage) { //returns true if the value is in the familialRelationsDictionary
   let count = 0;

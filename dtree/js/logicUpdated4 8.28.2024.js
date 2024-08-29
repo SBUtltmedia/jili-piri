@@ -3,7 +3,7 @@ let familyTreeSize = 93
 
 let familialRelationsDictionary = {
   59: {"warlpiri": [59], "lineage": "FMBWD", "name": "wapirra/kirdana"},
-  93: {"warlpiri": [59], "lineage": "FFZHZ+", "name": "wapirra/kirdana"}
+  93: {"warlpiri": [59], "lineage": "FFZH", "name": "wapirra/kirdana"}
   //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
   }
 
@@ -16,8 +16,6 @@ let genderDictionary = {
   "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
   "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
   "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-  "+": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-  "-": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"}
 }
 
 function logMovies() {
