@@ -30,6 +30,11 @@ circle {
     
     
 }
+.jiliwiri {
+    stroke: rgb(152, 42, 255);
+    
+    
+}
 .selected {
         fill: rgb(255, 249, 192)!important;
 }
