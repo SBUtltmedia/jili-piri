@@ -1,3 +1,5 @@
+console.log("working");
+
 let EGOid = 37;
 let familyTreeSize = 93
 
@@ -21,30 +23,31 @@ let genderDictionary = {
 }
 
 function logMovies() {
+  console.log("working2");
   fetch("data.json")
   .then(
     response => response.json()
+  
+   ).then(kinshipTree => init (kinshipTree))
+    const kinshipTree = response.json();
+    init (kinshipTree);
+ 
 
-//   ).then(kinshipTree => init (kinshipTree))
-//   // const kinshipTree = response.json();
-//   // init (kinshipTree);
-// }
 
-
-console.log(document.querySelectorAll("rect"));
-var allItems = document.querySelectorAll("rect");
-allItems.forEach((item)=>{
-  item.addEventListener("click", nodeClick)
-})
+//console.log(document.querySelectorAll("rect"));
+// var allItems = document.querySelectorAll("rect");
+// allItems.forEach((item)=>{
+//   item.addEventListener("click", nodeClick)
+// })
 
 
 function nodeClick(data, ...other) {
   
     //let id = data.id;
-    let HIGHLIGHTid = data.target.id;
-    console.log("data.target.id: ", data.target.id);
-    console.log(data, other);
-    //let NODEid = data.target.data.id
+    // let HIGHLIGHTid = data.target.id;
+    // console.log("data.target.id: ", data.target.id);
+    // console.log(data, other);
+    // let NODEid = data.target.data.id
     //let selectedNode = d3.select(`#node${id}`);
         //console.log("data.id: ", id);
         //console.log("data.data.id: ", data.data.id);
@@ -78,6 +81,7 @@ function highlight (idPair) {
   
   let svg = document.querySelector("g");
   let paths = document.getElementsByTagName("path");
+  try {
   if (idPair[1] > idPair[0]) {
     idPair = idPair.reverse();
   }
@@ -103,6 +107,7 @@ function cover (idPair) {
   
   let svg = document.querySelector("g");
   let paths = document.getElementsByTagName("path");
+  try {
   if (idPair[1] > idPair[0]) {
     idPair = idPair.reverse();
   }
@@ -371,46 +376,48 @@ function init (treeData) {
     width: 1200,
     callbacks: {
       nodeClick: function(name, extra, id) {
-        
-//       },
-//       marriageClick: function(extra, id) {
-//         let selectedLine = d3.select(`#node${id}`);
-//         console.log(selectedLine);
-//       },
 
-//       textRenderer: function(name, extra, textClass) {
-//           // THis callback is optinal but can be used to customize
-//         // how the text is rendered without having to rewrite the entire node
-//         // from screatch.
-//           if (extra && extra.nickname)
-//             name = name + " (" + extra.nickname + ")";
-//           return "<p align='center' class='" + textClass + "'>" + name + "</p>";
-//       },
-//       nodeRenderer: function(name, x, y, height, width, extra, id, nodeClass, textClass, textRenderer) {
-//         // This callback is optional but can be used to customize the
-//         // node element using HTML.
-//         let node = `<div
-//         style="height:100%;width:100%;"
-//         class="${nodeClass} bordered"
-//         id="node${id}">\n
-//         ${textRenderer(name, extra, textClass)}
-//         </div>`;
-//         // node += `<div `;
-//         // node += `style="height:100%;width:100%;" `;
-//         // node += 'class="' + nodeClass + '" ';
-//         // node += 'id="node' + id + '">\n';
-//         // node += textRenderer(name, extra, textClass);
-//         // node += '</div>';
-//         return node;
-//     }
-//     }
-//   });
-//   //setTimeout(()=>{d3.selectAll(".nodeText").on("", nodeClick);},1000)
+        
+      },
+      marriageClick: function(extra, id) {
+        let selectedLine = d3.select(`#node${id}`);
+        console.log(selectedLine);
+      },
+
+      textRenderer: function(name, extra, textClass) {
+          // THis callback is optinal but can be used to customize
+        // how the text is rendered without having to rewrite the entire node
+        // from screatch.
+          if (extra && extra.nickname)
+            name = name + " (" + extra.nickname + ")";
+          return "<p align='center' class='" + textClass + "'>" + name + "</p>";
+      },
+      nodeRenderer: function(name, x, y, height, width, extra, id, nodeClass, textClass, textRenderer) {
+        // This callback is optional but can be used to customize the
+        // node element using HTML.
+        let node = `<div
+        style="height:100%;width:100%;"
+        class="${nodeClass} bordered"
+        id="node${id}">\n
+        ${textRenderer(name, extra, textClass)}
+        </div>`;
+        // node += `<div `;
+        // node += `style="height:100%;width:100%;" `;
+        // node += 'class="' + nodeClass + '" ';
+        // node += 'id="node' + id + '">\n';
+        // node += textRenderer(name, extra, textClass);
+        // node += '</div>';
+        return node;
+    }
+    }
+  });
+  setTimeout(()=>{d3.selectAll(".nodeText").on("", nodeClick);},1000)
   
 
 
 
 
-// }
 
-// logMovies();
+    }
+  }
+logMovies();

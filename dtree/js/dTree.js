@@ -135,19 +135,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }).attr('id', function (d) {
           return `node${d.id}`;
         }).on("click", nodeClick)
+
+        
         nodes.filter(function (d) {
           console.log(d.data.class);
           return d.data.class == "woman"
-        }).append('circle').attr('class', "clickable")
-        .attr('cx', function (d) {
-          return Math.round(d.x);
-        }).attr('cy', function (d) {
-          return Math.round(d.y);
-        }).attr('r', function (d) {
-          return d.cWidth / 2;
+        }).append('rect').attr('class', "clickable")
+        .attr('x', function (d) {
+          return Math.round(d.x - d.cWidth / 2);
+        }).attr('y', function (d) {
+          return Math.round(d.y - d.cHeight * 1.5);
+        }).attr('width', function (d) {
+          return d.cWidth;
+        }).attr('height', function (d) {
+          return d.cHeight*3;
         }).attr('id', function (d) {
           return `node${d.id}`;
         }).on("click", nodeClick)
+        // .append('circle').attr('class', "clickable")
+        // .attr('cx', function (d) {
+        //   return Math.round(d.x);
+        // }).attr('cy', function (d) {
+        //   return Math.round(d.y);
+        // }).attr('r', function (d) {
+        //   return d.cWidth / 2;
+        // }).attr('id', function (d) {
+        //   return `node${d.id}`;
+        // }).on("click", nodeClick)
+        
         nodes.append('text').filter(function (d) {
           return d.data.hidden ? false : true;
         }).attr("text-anchor", "middle")
