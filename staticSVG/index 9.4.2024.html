@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="expansionFunctions.js"></script>
+    <script src="inversionFunctions.js"></script>
+    <script src="pathFunctions.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let el=document.getElementById("screen");
+            fetch('tree.svg')
+                .then(r => r.text())
+                .then(text => {
+                    el.innerHTML = text;
+                    init();
+                })
+                .catch(console.error.bind(console));
+        });
+        function init() {
+            let clickables = document.getElementsByClassName("clickable");
+            console.log({clickables});
+            Array.from(clickables).forEach(clickable=>{
+                clickable.addEventListener("click", nodeClick);
+            });
+        }
+        function nodeClick(e) {
+            let familialRelationsDictionary = {
+                59: {"warlpiri": [59], "lineage": "FFZSW", "name": "wapirra/kirdana"},
+                51: {"warlpiri": [51], "lineage": "FFZS", "name": "wapirra/kirdana"}
+                //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
+            }
+
+            let genderDictionary = {
+                "Z": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
+                "M": {"gender": "female", "generation": false, "level": 0, "opposite": "D"},
+                "D": {"gender": "female", "generation": false, "level": 2, "opposite": "M"},
+                "W": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
+                "B": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+                "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
+                "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
+                "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+            }
+            
+            let id = e.target.id;
+            //console.log(e.target.id);
+            let idNum = parseInt(id.split("node")[1]);
+
+            Array.from(document.getElementsByClassName("selected")).forEach(selected=>selected.classList.remove("selected"));
+            
+            
+            document.getElementById(`${id}`).classList.toggle("selected");
+            
+            for(let id = 0; id < familyTreeSize; id++) {
+                if(id in familialRelationsDictionary) {
+                    
+                    coverPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+                }
+            }
+
+            console.log(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
+            //console.log("done covering");
+            highlightPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+
+        }
+        
+        </script>
+</head>
+<body>
+    <div id="screen">
+        
+    </div>
+    
+</body>
+</html>

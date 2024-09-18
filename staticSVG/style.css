@@ -13,6 +13,10 @@ circle {
     fill: none;
     stroke: #000;
 }
+.covered {
+    fill: none;
+    opacity: 0;
+}
 .marriage {
     fill: none;
     stroke: rgb(196, 48, 48);
@@ -27,7 +31,7 @@ circle {
 }
 .highlighted {
     stroke: green;
-    
+    stroke-width: 2px;
     
 }
 .selected {

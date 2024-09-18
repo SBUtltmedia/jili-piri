@@ -48,7 +48,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         var allNodes = this.allNodes;
         var nodeSize = this.nodeSize;
 
-        var width = opts.width + opts.margin.left + opts.margin.right;
+        var width = (opts.width + opts.margin.left + opts.margin.right);
         var height = opts.height + opts.margin.top + opts.margin.bottom;
 
         // create zoom handler
@@ -258,7 +258,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           x: d.target.x,
           y: ny
         }, {
-          x: d.source.x,
+          x: d.source.x, //marriage node to children
           y: d.source.y
         }];
 
@@ -272,13 +272,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: '_id',
       value: function _id(d, i) {
-      
+        console.log({d, i});
+        
         if (d.source.marriageNode) {
-          //console.log(d);
-          return `i_${d.source.id}_${d.target.id}`
+          //console.log(d.source);
+          return `marriage_${d.source.id}_${d.target.id}_${d.source.data?.id}_${d.target.data?.id}`
         }
         else if (d.source&&d.target&&d.source.data&&d.target.data) {
-          return `i_${d.source.data.id}_${d.target.data.id}`;
+          console.log(d.source);
+          //return `i_${d.source.data.id}_${d.target.data.id}`;
+          return `i_${d.source.id + 1}_${d.target.id}`
         }
         else {
           return "none";

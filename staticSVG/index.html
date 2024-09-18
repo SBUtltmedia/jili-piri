@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="expansionFunctions.js"></script>
+    <script src="inversionFunctions.js"></script>
+    <script src="pathFunctions.js"></script>
+    <script src="svg-pan-zoom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let el=document.getElementById("screen");
+            fetch('InkscapeTree.svg')
+                .then(r => r.text())
+                .then(text => {
+                    el.innerHTML = text;
+                    init();
+                })
+                .catch(console.error.bind(console));
+        });
+        function init() {
+            let clickables = document.getElementsByClassName("clickable");
+            console.log({clickables});
+            Array.from(clickables).forEach(clickable=>{
+                clickable.addEventListener("click", nodeClick);
+            });
+
+            var panZoomTiger = svgPanZoom('#familyTree', {
+                viewportSelector: '.svg-pan-zoom_viewport',
+                panEnabled: true,
+                controlIconsEnabled: false,
+                zoomEnabled: true,
+                dblClickZoomEnabled: true,
+                mouseWheelZoomEnabled: true,
+                preventMouseEventsDefault: true,
+                zoomScaleSensitivity: 0.4,
+                minZoom: 0.25,
+                maxZoom: 10,
+                fit: true,
+                contain: false,
+                center: true,
+                refreshRate: 'auto'
+                //beforeZoom: function(){},
+                //onZoom: function(){},
+                //beforePan: function(){},
+                //onPan: function(){},
+                //onUpdatedCTM: function(){},
+                //customEventsHandler: {},
+                //eventsListenerElement: null
+            
+            });
+            // $(function() {
+            //     panZoomInstance = svgPanZoom('#style1', {
+            //     zoomEnabled: true,
+            //     controlIconsEnabled: true,
+            //     fit: true,
+            //     center: true,
+            //     minZoom: 0.1
+            // });
+
+            // // zoom out
+            // panZoomInstance.zoom(0.2)
+
+            // $("#move").on("click", function() {
+            // // Pan by any values from -80 to 80
+            //     panZoomInstance.panBy({
+            //       x: Math.round(Math.random() * 160 - 80),
+            //       y: Math.round(Math.random() * 160 - 80)
+            //     })
+            // });
+            // })
+        }
+        function nodeClick(e) {
+            let familialRelationsDictionary = {
+                59: {"warlpiri": [59], "lineage": "FFZSW", "name": "wapirra/kirdana"},
+                51: {"warlpiri": [51], "lineage": "FFZS", "name": "wapirra/kirdana"}
+                //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
+            }
+
+            let genderDictionary = {
+                "Z": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
+                "M": {"gender": "female", "generation": false, "level": 0, "opposite": "D"},
+                "D": {"gender": "female", "generation": false, "level": 2, "opposite": "M"},
+                "W": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
+                "B": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+                "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
+                "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
+                "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+            }
+            
+            let id = e.target.id;
+            console.log(e.target.id);
+            let idNum = parseInt(id.split("node")[1]);
+
+            Array.from(document.getElementsByClassName("selected")).forEach(selected=>selected.classList.remove("selected"));
+            
+            
+            document.getElementById(`${id}`).classList.toggle("selected");
+            
+            for(let id = 0; id < familyTreeSize; id++) {
+                if(id in familialRelationsDictionary) {
+                    
+                    coverPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+                }
+            }
+
+            console.log(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
+            //console.log("done covering");
+            highlightPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+
+        }
+        
+        </script>
+</head>
+<body>
+    <div id="screen">
+        
+    </div>
+    
+</body>
+</html>
