@@ -82,24 +82,76 @@ let genderDictionary = {
   
       }
     }
+
+
     
   
     //console.log("lineageStr: ", lineageStr);
     return(lineageStr);
   }
 
+  function reduceJiliwiri (lineage) { // removes pairs that cancel each other out such as "ZDM" which means "Z"
+    let lineageStr = lineage;
+    let lineageLength = lineageStr.length;
+    //console.log("pickedUp");
+    for(n = 0; n < lineageLength; n++) {
+      try {
+        //console.log("n - 1: ", genderDictionary[lineageStr.charAt(n - 1)]);
+        //console.log("n: ", genderDictionary[lineageStr.charAt(n)]);
+        if (n > 0 && ((genderDictionary[lineageStr.charAt(n - 1)]["level"] - genderDictionary[lineageStr.charAt(n)]["level"]) == 2 || (genderDictionary[lineageStr.charAt(n - 1)]["level"] - genderDictionary[lineageStr.charAt(n)]["level"]) == -2)) {
+          lineageStr = lineageStr.substring(0, n - 1) + lineageStr.substring(n + 1);
+          n = 0;
+          //console.log("pickedUP");
+        }
+        if(n > 0 && ((lineageStr.charAt(n - 1) == "Z" && (lineageStr.charAt(n) == "B")) || (lineageStr.charAt(n - 1) == "B" && (lineageStr.charAt(n) == "Z")))) {
+          //console.log("picked up");
+          lineageStr = lineageStr.substring(0, n - 1) + lineageStr.substring(n + 1);
+          n = 0;
+        }
+        if(n == 0 && (lineageStr.charAt(n) == "Z" && (lineageStr.charAt(n + 1) == "M"))) {
+           lineageStr = lineageStr.substring(n + 1);
+           n = 0;
+         }
+      }
+      catch(err) {
+  
+      }
+    }
+
+
+    
+  
+    //console.log("lineageStr: ", lineageStr);
+    return(lineageStr);
+  }
+
+
+
+  
   function expandParse (lineage) { //loops through lineage, checks for pairs to expand, calls expand to expand the pairs
     let lineageStr = lineage;
     let lineageLength = lineageStr.length;
     let addStr = "";
+    //console.log("lineage: ", lineage);
+    for(let n = 0; n < lineageLength; n++) {
   
-    for(let n = 1; n < lineageLength; n++) {
-  
-      if ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n-1)]["gender"]) != (genderDictionary[lineageStr.charAt(n)]["gender"]))) {
+      if (n > 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n-1)]["gender"]) != (genderDictionary[lineageStr.charAt(n)]["gender"])))) {
         addStr = expand([lineageStr.charAt(n-1), lineageStr.charAt(n)]);
         lineageStr = lineageStr.substring(0, n - 1) + addStr + lineageStr.substring(n + 1);
         lineageLength = lineageStr.length;
         n = 0;
+      }
+      else if (n == 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n)]["gender"]) != "male"))) {
+        if ((genderDictionary[lineageStr.charAt(n)]["level"] == 0)) {
+          lineageStr = "Z" + lineageStr.substring(n);
+          lineageLength = lineageStr.length;
+          n = 0;
+        }
+        else if ((genderDictionary[lineageStr.charAt(n)]["level"] == 2)) {
+          lineageStr = "W" + lineageStr.substring(n);
+          lineageLength = lineageStr.length;
+          n = 0;
+        }
       }
     }
     //console.log("lineageStr: ", lineageStr);

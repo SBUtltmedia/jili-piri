@@ -31,11 +31,21 @@ circle {
 }
 .highlighted {
     stroke: green;
-    stroke-width: 2px;
+    stroke-width: 1.8px;
+    fill: none;
+    
+}
+.highlightedJiliwiri {
+    stroke: rgb(76, 0, 255);
+    stroke-width: 1.8px;
+    fill: none;
     
 }
 .selected {
         fill: rgb(255, 249, 192)!important;
+}
+.selectedJiliwiri {
+    fill: rgb(172, 180, 255)!important;
 }
 .ego {
     background-color: rgb(123, 255, 83);

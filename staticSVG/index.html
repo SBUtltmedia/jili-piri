@@ -9,9 +9,10 @@
     <script src="pathFunctions.js"></script>
     <script src="svg-pan-zoom.js"></script>
     <script>
+        var panZoom
         document.addEventListener("DOMContentLoaded", function() {
             let el=document.getElementById("screen");
-            fetch('InkscapeTree.svg')
+            fetch('InkscapeTree2.svg')
                 .then(r => r.text())
                 .then(text => {
                     el.innerHTML = text;
@@ -25,8 +26,9 @@
             Array.from(clickables).forEach(clickable=>{
                 clickable.addEventListener("click", nodeClick);
             });
-
-            var panZoomTiger = svgPanZoom('#familyTree', {
+            document.getElementById("EGO").addEventListener("click", centerEgo);
+            
+            panZoom = svgPanZoom('#familyTree', {
                 viewportSelector: '.svg-pan-zoom_viewport',
                 panEnabled: true,
                 controlIconsEnabled: false,
@@ -71,10 +73,27 @@
             // });
             // })
         }
+
+        function centerEgo() {
+            panZoom.zoom(2);
+            panZoom.pan({x: -100, y: -550});
+
+
+        }
+
         function nodeClick(e) {
             let familialRelationsDictionary = {
-                59: {"warlpiri": [59], "lineage": "FFZSW", "name": "wapirra/kirdana"},
-                51: {"warlpiri": [51], "lineage": "FFZS", "name": "wapirra/kirdana"}
+                59: {"warlpiri": [10, 59], "lineage": "M", "name": "wapirra/kirdana"},
+                6: {"warlpiri": [6], "lineage": "F", "name": "wapirra/kirdana"},
+                61: {"warlpiri": [59, 61, 6], "lineage": "FM", "name": "wapirra/kirdana"},
+                2: {"warlpiri": [59, 61, 6], "lineage": "FF", "name": "wapirra/kirdana"},
+                41: {"warlpiri": [41], "lineage": "S", "name": "wapirra/kirdana"},
+                51: {"warlpiri": [51], "lineage": "W", "name": "wapirra/kirdana"},
+                32: {"warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana"},
+                33: {"warlpiri": [51, 32, 40, 33], "lineage": "DD", "name": "wapirra/kirdana"},
+                32: {"warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana"},
+                11: {"warlpiri": [10, 11], "lineage": "ZD", "name": "wapirra/kirdana"},
+                31: {"warlpiri": [31], "lineage": "EGO", "name": "wapirra/kirdana"}
                 //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
             }
 
@@ -88,26 +107,52 @@
                 "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
                 "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
             }
+            function findKey (lineage) { //returns the key of the lineage path that fits the one passed
+                let count = 0;
+                //console.log("lineage: ", lineage);
+                for (const [key, value] of Object.entries(familialRelationsDictionary)) {
+                  //console.log("value[\"lineage\"]: ", value["lineage"]);
+                  if ((value["lineage"]) == lineage) {
+                    count++;
+                    //console.log("count: ", count);
+                  }
+                  if (count > 0) {
+                    console.log("Number(key): ", Number(key));
+                    return (Number(key));
+                  }
+                }
+              }
             
             let id = e.target.id;
             console.log(e.target.id);
             let idNum = parseInt(id.split("node")[1]);
 
             Array.from(document.getElementsByClassName("selected")).forEach(selected=>selected.classList.remove("selected"));
+            Array.from(document.getElementsByClassName("selectedJiliwiri")).forEach(selectedJiliwiri=>selectedJiliwiri.classList.remove("selectedJiliwiri"));
             
             
             document.getElementById(`${id}`).classList.toggle("selected");
             
+            //console.log("toJiliwiri: ", toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
+            
             for(let id = 0; id < familyTreeSize; id++) {
                 if(id in familialRelationsDictionary) {
-                    
                     coverPath([familialRelationsDictionary[idNum]["warlpiri"]]);
                 }
             }
+            
+            if (familialRelationsDictionary[idNum]["warlpiri"] == 31) {
 
-            console.log(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
-            //console.log("done covering");
-            highlightPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+            }
+            else {
+                highlightPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+                //highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
+                highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
+                
+                let jiliwiriKey = "node" + findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
+
+                document.getElementById(`${jiliwiriKey}`).classList.toggle("selectedJiliwiri");
+            }
 
         }
         
@@ -117,6 +162,6 @@
     <div id="screen">
         
     </div>
-    
+    <button id="EGO">Center on EGO</button>
 </body>
 </html>
