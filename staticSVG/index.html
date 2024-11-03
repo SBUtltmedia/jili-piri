@@ -8,11 +8,13 @@
     <script src="inversionFunctions.js"></script>
     <script src="pathFunctions.js"></script>
     <script src="svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.css"/>
     <script>
         var panZoom
         document.addEventListener("DOMContentLoaded", function() {
             let el=document.getElementById("screen");
-            fetch('InkscapeTree2.svg')
+            fetch('InkscapeTreePlain.svg')
                 .then(r => r.text())
                 .then(text => {
                     el.innerHTML = text;
@@ -72,6 +74,22 @@
             //     })
             // });
             // })
+            let intro=introJs()
+            
+            let stepLogic=[
+                ()=>document.getElementById("node10").dispatchEvent(new Event('click'))
+                ,
+                ,
+                ()=>document.getElementById("node59").dispatchEvent(new Event('click'))]
+            
+            intro.onbeforechange(function () {
+                document.getElementById("node31").dispatchEvent(new Event('click'))
+                let arrayStep=this._currentStep;
+                console.log(this._currentStep);
+                stepLogic[parseInt(this._currentStep)]()
+                
+            });
+            intro.start();
         }
 
         function centerEgo() {
@@ -83,16 +101,24 @@
 
         function nodeClick(e) {
             let familialRelationsDictionary = {
+                1: {"warlpiri": [6, 2, 1], "lineage": "FFF", "name": "wapirra/kirdana"},
+                93: {"warlpiri": [6, 2, 62, 93], "lineage": "FFM", "name": "wapirra/kirdana"},
+                96: {"warlpiri": [10, 59, 94, 96], "lineage": "MF", "name": "wapirra/kirdana"},
+                95: {"warlpiri": [10, 59, 95], "lineage": "MM", "name": "wapirra/kirdana"},
                 59: {"warlpiri": [10, 59], "lineage": "M", "name": "wapirra/kirdana"},
                 6: {"warlpiri": [6], "lineage": "F", "name": "wapirra/kirdana"},
-                61: {"warlpiri": [59, 61, 6], "lineage": "FM", "name": "wapirra/kirdana"},
-                2: {"warlpiri": [59, 61, 6], "lineage": "FF", "name": "wapirra/kirdana"},
+                61: {"warlpiri": [6, 3, 61], "lineage": "FM", "name": "wapirra/kirdana"},
+                2: {"warlpiri": [6, 2], "lineage": "FF", "name": "wapirra/kirdana"},
                 41: {"warlpiri": [41], "lineage": "S", "name": "wapirra/kirdana"},
+                12: {"warlpiri": [10, 11, 12], "lineage": "Z+DD", "name": "wapirra/kirdana"},
                 51: {"warlpiri": [51], "lineage": "W", "name": "wapirra/kirdana"},
                 32: {"warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana"},
-                33: {"warlpiri": [51, 32, 40, 33], "lineage": "DD", "name": "wapirra/kirdana"},
-                32: {"warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana"},
+                33: {"warlpiri": [51, 32, 33], "lineage": "DD", "name": "wapirra/kirdana"},
                 11: {"warlpiri": [10, 11], "lineage": "ZD", "name": "wapirra/kirdana"},
+                7: {"warlpiri": [7], "lineage": "Z-", "name": "wapirra/kirdana"},
+                10: {"warlpiri": [10], "lineage": "Z+", "name": "wapirra/kirdana"},
+                52: {"warlpiri": [52], "lineage": "B+", "name": "wapirra/kirdana"},
+                55: {"warlpiri": [55], "lineage": "B-", "name": "wapirra/kirdana"},
                 31: {"warlpiri": [31], "lineage": "EGO", "name": "wapirra/kirdana"}
                 //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
             }
@@ -117,7 +143,7 @@
                     //console.log("count: ", count);
                   }
                   if (count > 0) {
-                    console.log("Number(key): ", Number(key));
+                    //console.log("Number(key): ", Number(key));
                     return (Number(key));
                   }
                 }
@@ -145,12 +171,15 @@
 
             }
             else {
-                highlightPath([familialRelationsDictionary[idNum]["warlpiri"]]);
+                highlightPath([familialRelationsDictionary[idNum]["warlpiri"]], false);
                 //highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
-                highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
                 
+                console.log("idNum:", toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
+                
+                
+                highlightPath([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]], true);
                 let jiliwiriKey = "node" + findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
-
+                console.log("jiliwiri: ", jiliwiriKey);
                 document.getElementById(`${jiliwiriKey}`).classList.toggle("selectedJiliwiri");
             }
 

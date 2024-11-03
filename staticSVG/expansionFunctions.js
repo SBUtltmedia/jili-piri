@@ -16,6 +16,8 @@ let genderDictionary = {
     "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
     "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
     "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+    "+": {"gender": ""},
+    "-": {"gender": ""},
   }
 
   function expand (lineage) { // expands the pair to include "bridge" terms
@@ -132,28 +134,34 @@ let genderDictionary = {
     let lineageStr = lineage;
     let lineageLength = lineageStr.length;
     let addStr = "";
-    //console.log("lineage: ", lineage);
+    console.log("lineage: ", lineage);
     for(let n = 0; n < lineageLength; n++) {
-  
-      if (n > 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n-1)]["gender"]) != (genderDictionary[lineageStr.charAt(n)]["gender"])))) {
-        addStr = expand([lineageStr.charAt(n-1), lineageStr.charAt(n)]);
-        lineageStr = lineageStr.substring(0, n - 1) + addStr + lineageStr.substring(n + 1);
-        lineageLength = lineageStr.length;
-        n = 0;
-      }
-      else if (n == 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n)]["gender"]) != "male"))) {
-        if ((genderDictionary[lineageStr.charAt(n)]["level"] == 0)) {
-          lineageStr = "Z" + lineageStr.substring(n);
-          lineageLength = lineageStr.length;
-          n = 0;
+      //console.log("charAt(n); ", lineageStr.charAt(n));
+      if (!(lineageStr.charAt(n)=="+") && !(lineageStr.charAt(n)=="-")) {
+        //console.log("charAt(n); ", lineageStr.charAt(n));
+        if (n > 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n-1)]["gender"]) != (genderDictionary[lineageStr.charAt(n)]["gender"])))) {
+          if (!(lineageStr.charAt(n-1)=="+") && !(lineageStr.charAt(n-1)=="-")) {
+            addStr = expand([lineageStr.charAt(n-1), lineageStr.charAt(n)]);
+            lineageStr = lineageStr.substring(0, n - 1) + addStr + lineageStr.substring(n + 1);
+            lineageLength = lineageStr.length;
+            n = 0;
+          }
         }
-        else if ((genderDictionary[lineageStr.charAt(n)]["level"] == 2)) {
-          lineageStr = "W" + lineageStr.substring(n);
-          lineageLength = lineageStr.length;
-          n = 0;
+        else if (n == 0 && ((genderDictionary[lineageStr.charAt(n)]["generation"] == false) && ((genderDictionary[lineageStr.charAt(n)]["gender"]) != "male"))) {
+          if ((genderDictionary[lineageStr.charAt(n)]["level"] == 0)) {
+            lineageStr = "Z" + lineageStr.substring(n);
+            lineageLength = lineageStr.length;
+            n = 0;
+          }
+          else if ((genderDictionary[lineageStr.charAt(n)]["level"] == 2)) {
+            lineageStr = "W" + lineageStr.substring(n);
+            lineageLength = lineageStr.length;
+            n = 0;
+          }
         }
       }
     }
     //console.log("lineageStr: ", lineageStr);
+    console.log("expandparse: ", lineageStr);
     return(lineageStr);
   }

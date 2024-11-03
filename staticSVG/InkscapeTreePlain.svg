@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    viewBox="0 0 1200 1000"
+   
    id="familyTree"
    version="1.1"
    width="1200"
@@ -21,7 +22,7 @@
       <path
          class="linage"
          d="m -256.74164,235.26339 v 0 -55.25282 L 0,180 v -60"
-         id="i_93_2"
+         id="i_1_2"
          data-name="_FF" />
       <path
          class="linage"
@@ -37,17 +38,19 @@
          class="linage"
          d="m -206.12915,358.64015 v 0 l -0.0402,-58.67364 93.24798,0.0335 0.34704,-60"
          id="i_59_95"
-         data-name="_FZ" />
+         data-name="_FZ"
+          />
       <path
          class="linage"
          d="m -231.91176,360 v 0 -60 h -12 v -60"
-         id="i_61_6"
+         id="i_2_6"
          data-name="_F" />
       <path
          class="linage"
          d="m -56.655637,356.28929 v 0 -56.33609 L -112.92137,300 l 0.34703,-60"
          id="i_96_94"
-         data-name="_F" />
+         data-name="_F"
+          />
       <path
          class="linage"
          d="m 245.80476,360 v 0 -60 h 36 v -60"
@@ -141,7 +144,7 @@
       <path
          class="linage"
          d="m -423.91176,720 v 0 -60 h 36 v -60"
-         id="i_19_12"
+         id="i_11_12"
          data-name="_Z+DD" />
       <path
          class="linage"
@@ -178,48 +181,56 @@
          d="m 114.41352,473.08891 v 0 -52.83485 L 133.88473,420 l 0.34703,-60"
          id="i_109_110"
          data-name="_FZ"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 152.75747,470.49711 v 0 l -0.0402,-50.5439 -18.8325,0.0468 L 134.2318,360"
          id="i_111_108"
          data-name="_F"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 45.447958,473.50298 v 0 l -0.189464,-52.43828 5.924533,-0.0172 0.01547,-60.55029"
          id="i_105_106"
          data-name="_FZ"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 84.493268,473.5001 v 0 l -0.3025,-52.5 -33.007741,0.0474 0.01546,-60.55026"
          id="i_104_107"
          data-name="_F"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m -18.216227,472.50288 v 0 l -0.189464,-52.43828 3.305787,0.0162 0.07459,-60.98896"
          id="i_94_102"
          data-name="_FZ"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 20.829079,472.5 v 0 l -0.3025,-52.5 -35.626483,0.0808 0.07459,-60.98896"
          id="i_103_100"
          data-name="_F"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 68.550843,352.5918 v 0 -52.83485 l 19.471211,-0.25406 0.34703,-60"
          id="i_98_105"
          data-name="_FZ"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
          d="m 106.89479,350 v 0 l -0.0402,-50.5439 -18.832496,0.0468 0.34703,-60.00001"
          id="i_108_99"
          data-name="_F"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
@@ -385,29 +396,34 @@
          class="marriage"
          id="marriage_96_95"
          data-name="_"
-         d="m -132.15295,240 h 12.00001 v 0 0 0 0 0 0 0 h 12.00002 v 0" />
+         d="m -132.15295,240 h 12.00001 v 0 0 0 0 0 0 0 h 12.00002 v 0"
+          />
       <path
          class="marriage"
          id="marriage_108_109"
          data-name="_"
          d="m 110.94695,360.48276 26.40195,0.0144 v 0 0 0 0 0 0 0 h 6.71868 v 0"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="marriage"
          id="marriage_98_99"
          data-name="_"
-         d="m 79.486232,240 h 11.999986 v 0 0 0 0 0 0 0 h 12.000002 v 0" />
+         d="m 79.486232,240 h 11.999986 v 0 0 0 0 0 0 0 h 12.000002 v 0"
+          />
       <path
          class="marriage"
          id="marriage_94_100"
          data-name="_"
          d="m -49.498412,359.5918 h 11.999981 v 0 0 0 0 0 0 0 h 28.6255153 v 0"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="marriage"
          id="marriage_104_105"
          data-name="_"
          d="m 38.090927,360.99721 v 0 0 0 0 0 0 0 0 h 24.189444 v 0"
+         
          transform="translate(-3.6476862e-6)" />
       <path
          class="linage"
@@ -489,20 +505,22 @@
          class="linage"
          d="m -452.73645,474.80068 0.0273,-13.66639 0.0397,-41.13429 h 18.02849 l -0.1549,-60.46471"
          id="i_5_115"
-         data-name="_Z-" />
+         data-name="_Z-"
+         class="linage" />
       <path
          class="linage"
          d="M -424.89252,471.57976 V 457.32724 420 h -9.74844 l -0.1549,-60.46471"
          id="i_3_116"
-         data-name="_Z-" />
+         data-name="_Z-"
+         class="linage" />
       <path
          class="linage"
          d="m -446.64038,350 c 109.15472,-39.77276 214.72882,3 214.72882,3"
-         id="path1" />
+         id="i_3_6" />
       <path
          class="linage"
          d="m -399.91156,470 c 109.5,-45.89682 191.9998,-1.45456 191.9998,-1.45456"
-         id="path2" />
+         id="i_7_31" />
       <path
          class="linage"
          d="M -207.91176,468.54544 C -151.04659,438.84006 -111.91156,473 -111.91156,473"
@@ -553,14 +571,16 @@
        y="352.5"
        width="20"
        height="15"
-       id="node94" />
+       id="node94"
+        />
     <rect
        class="clickable"
        x="-140.15289"
        y="232.5"
        width="20"
        height="15"
-       id="node96" />
+       id="node96"
+        />
     <rect
        class="clickable"
        x="259.80447"
@@ -577,6 +597,8 @@
        id="node66" />
     <rect
        class="clickable"
+       data-step='3'
+       data-intro='Hello step three!'
        x="-385.91156"
        y="473"
        width="20"
@@ -584,6 +606,8 @@
        id="node9" />
     <rect
        class="clickable"
+       data-step='2'
+       data-intro='Hello step two!'
        x="-289.91156"
        y="473"
        width="20"
@@ -591,11 +615,14 @@
        id="node30" />
     <rect
        class="clickable ego"
+       data-step='1'
+       data-intro='Hello step one!'
        x="-221.57957"
        y="468.46017"
        width="29.819763"
        height="23.079651"
-       id="node31" />
+       id="node31"
+        />
     <rect
        class="clickable"
        x="-121.91156"
@@ -743,6 +770,7 @@
        width="20"
        height="15"
        id="node101"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -751,6 +779,7 @@
        width="20"
        height="15"
        id="node102"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -759,6 +788,7 @@
        width="20"
        height="15"
        id="node109"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -767,6 +797,7 @@
        width="20"
        height="15"
        id="node110"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -775,6 +806,7 @@
        width="20"
        height="15"
        id="node106"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -783,6 +815,7 @@
        width="20"
        height="15"
        id="node105"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -791,6 +824,7 @@
        width="20"
        height="15"
        id="node98"
+       
        transform="translate(-3.6476862e-6)" />
     <rect
        class="clickable"
@@ -834,7 +868,8 @@
        cx="106.89476"
        cy="360"
        r="10"
-       id="node108" />
+       id="node108"
+        />
     <circle
        class="clickable"
        cx="245.80447"
@@ -997,6 +1032,7 @@
        cy="240"
        r="10"
        id="node97"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
@@ -1004,6 +1040,7 @@
        cy="240"
        r="10"
        id="node99"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
@@ -1011,6 +1048,7 @@
        cy="360.0918"
        r="10"
        id="node100"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
@@ -1018,6 +1056,7 @@
        cy="480"
        r="10"
        id="node103"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
@@ -1025,6 +1064,7 @@
        cy="481.00009"
        r="10"
        id="node107"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
@@ -1032,24 +1072,28 @@
        cy="360.99722"
        r="10"
        id="node104"
+       
        transform="translate(-3.6476862e-6)" />
     <circle
        class="clickable"
        cx="-98.759186"
        cy="240"
        r="10"
-       id="node95" />
+       id="node95"
+        />
     <circle
        class="clickable"
        cx="152.75743"
        cy="480.49713"
        r="10"
        id="node111"
+       
        transform="translate(-3.6476862e-6)" />
     <text
        id="text1" />
     <text
        text-anchor="middle"
+       
        x="-13"
        y="120"
        width="20"
@@ -1059,6 +1103,7 @@
        id="text3" />
     <text
        text-anchor="middle"
+       
        x="11"
        y="120"
        width="20"
@@ -1066,6 +1111,7 @@
        id="text4">FFM</text>
     <text
        text-anchor="middle"
+       
        x="-256.91156"
        y="240"
        width="20"
@@ -1075,6 +1121,7 @@
        id="text6" />
     <text
        text-anchor="middle"
+       
        x="-229.7917"
        y="240"
        width="20"
@@ -1082,6 +1129,7 @@
        id="text7">FM</text>
     <text
        text-anchor="middle"
+       
        x="236.886"
        y="240"
        width="20"
@@ -1091,6 +1139,7 @@
        id="text9" />
     <text
        text-anchor="middle"
+       
        x="292.80447"
        y="240"
        width="20"
@@ -1098,6 +1147,7 @@
        id="text10">FFZH</text>
     <text
        text-anchor="middle"
+       
        x="-446.12466"
        y="360"
        width="20"
@@ -1107,6 +1157,7 @@
        id="text12" />
     <text
        text-anchor="middle"
+       
        x="-423.64038"
        y="360"
        width="20"
@@ -1114,6 +1165,7 @@
        id="text13">FZH</text>
     <text
        text-anchor="middle"
+       
        x="-232.91156"
        y="360"
        width="20"
@@ -1123,6 +1175,7 @@
        id="text15" />
     <text
        text-anchor="middle"
+       
        x="-208.91156"
        y="360"
        width="20"
@@ -1130,6 +1183,7 @@
        id="text16">M</text>
     <text
        text-anchor="middle"
+       
        x="244.80447"
        y="360"
        width="20"
@@ -1139,6 +1193,7 @@
        id="text18" />
     <text
        text-anchor="middle"
+       
        x="268.80447"
        y="360"
        width="20"
@@ -1146,6 +1201,7 @@
        id="text19">FFZDH</text>
     <text
        text-anchor="middle"
+       
        x="292.80447"
        y="360"
        width="20"
@@ -1155,6 +1211,7 @@
        id="text21" />
     <text
        text-anchor="middle"
+       
        x="316.80447"
        y="360"
        width="20"
@@ -1162,6 +1219,7 @@
        id="text22">FFZSW</text>
     <text
        text-anchor="middle"
+       
        x="-400.91156"
        y="480"
        width="20"
@@ -1171,6 +1229,7 @@
        id="text24" />
     <text
        text-anchor="middle"
+       
        x="-376.91156"
        y="480"
        width="20"
@@ -1178,6 +1237,7 @@
        id="text25">Z-H</text>
     <text
        text-anchor="middle"
+       
        x="-352.91156"
        y="480"
        width="20"
@@ -1187,6 +1247,7 @@
        id="text27" />
     <text
        text-anchor="middle"
+       
        x="-280.91156"
        y="480"
        width="20"
@@ -1194,6 +1255,7 @@
        id="text28">Z+H</text>
     <text
        text-anchor="middle"
+       
        x="-206.88185"
        y="483.67334"
        width="20"
@@ -1203,6 +1265,7 @@
        id="text30" />
     <text
        text-anchor="middle"
+       
        x="-136.91159"
        y="480"
        width="20"
@@ -1210,6 +1273,7 @@
        id="text31">W</text>
     <text
        text-anchor="middle"
+       
        x="-112.91156"
        y="480"
        width="20"
@@ -1219,6 +1283,7 @@
        id="text33" />
     <text
        text-anchor="middle"
+       
        x="-88.91156"
        y="480"
        width="20"
@@ -1226,6 +1291,7 @@
        id="text34">B+W</text>
     <text
        text-anchor="middle"
+       
        x="-64.91156"
        y="480"
        width="20"
@@ -1235,6 +1301,7 @@
        id="text36" />
     <text
        text-anchor="middle"
+       
        x="-40.91156"
        y="480"
        width="20"
@@ -1242,6 +1309,7 @@
        id="text37">B-W</text>
     <text
        text-anchor="middle"
+       
        x="196.80449"
        y="480"
        width="20"
@@ -1251,6 +1319,7 @@
        id="text39" />
     <text
        text-anchor="middle"
+       
        x="220.80449"
        y="480"
        width="20"
@@ -1258,6 +1327,7 @@
        id="text40">FFZSD-H</text>
     <text
        text-anchor="middle"
+       
        x="244.80447"
        y="480"
        width="20"
@@ -1267,6 +1337,7 @@
        id="text42" />
     <text
        text-anchor="middle"
+       
        x="268.80447"
        y="480"
        width="20"
@@ -1274,6 +1345,7 @@
        id="text43">FFZSD+H</text>
     <text
        text-anchor="middle"
+       
        x="292.80447"
        y="480"
        width="20"
@@ -1283,6 +1355,7 @@
        id="text45" />
     <text
        text-anchor="middle"
+       
        x="316.80447"
        y="480"
        width="20"
@@ -1290,6 +1363,7 @@
        id="text46">FFZSSW</text>
     <text
        text-anchor="middle"
+       
        x="340.80447"
        y="480"
        width="20"
@@ -1299,6 +1373,7 @@
        id="text48" />
     <text
        text-anchor="middle"
+       
        x="364.80447"
        y="480"
        width="20"
@@ -1306,6 +1381,7 @@
        id="text49">FFZSS+W</text>
     <text
        text-anchor="middle"
+       
        x="388.80447"
        y="480"
        width="20"
@@ -1315,6 +1391,7 @@
        id="text51" />
     <text
        text-anchor="middle"
+       
        x="412.80447"
        y="480"
        width="20"
@@ -1322,6 +1399,7 @@
        id="text52">FFZSS-W</text>
     <text
        text-anchor="middle"
+       
        x="-400.91156"
        y="600"
        width="20"
@@ -1331,6 +1409,7 @@
        id="text54" />
     <text
        text-anchor="middle"
+       
        x="-360.91156"
        y="600"
        width="20"
@@ -1338,6 +1417,7 @@
        id="text55">Z+DH</text>
     <text
        text-anchor="middle"
+       
        x="-320.91156"
        y="600"
        width="20"
@@ -1347,6 +1427,7 @@
        id="text57" />
     <text
        text-anchor="middle"
+       
        x="-280.91156"
        y="600"
        width="20"
@@ -1354,6 +1435,7 @@
        id="text58">Z+SW</text>
     <text
        text-anchor="middle"
+       
        x="-208.91156"
        y="600"
        width="20"
@@ -1363,6 +1445,7 @@
        id="text60" />
     <text
        text-anchor="middle"
+       
        x="-168.91159"
        y="600"
        width="20"
@@ -1370,6 +1453,7 @@
        id="text61">Z+SH</text>
     <text
        text-anchor="middle"
+       
        x="-128.91159"
        y="600"
        width="20"
@@ -1379,6 +1463,7 @@
        id="text63" />
     <text
        text-anchor="middle"
+       
        x="-88.91156"
        y="600"
        width="20"
@@ -1386,6 +1471,7 @@
        id="text64">SW</text>
     <text
        text-anchor="middle"
+       
        x="268.80447"
        y="600"
        width="20"
@@ -1395,6 +1481,7 @@
        id="text66" />
     <text
        text-anchor="middle"
+       
        x="292.80447"
        y="600"
        width="20"
@@ -1402,6 +1489,7 @@
        id="text67">FFZSSD-H</text>
     <text
        text-anchor="middle"
+       
        x="316.80447"
        y="600"
        width="20"
@@ -1411,6 +1499,7 @@
        id="text69" />
     <text
        text-anchor="middle"
+       
        x="340.80447"
        y="600"
        width="20"
@@ -1418,6 +1507,7 @@
        id="text70">FFZSSD+H</text>
     <text
        text-anchor="middle"
+       
        x="-424.91156"
        y="720"
        width="20"
@@ -1427,6 +1517,7 @@
        id="text72" />
     <text
        text-anchor="middle"
+       
        x="-400.91156"
        y="720"
        width="20"
@@ -1434,6 +1525,7 @@
        id="text73">Z+DDH</text>
     <text
        text-anchor="middle"
+       
        x="-376.91156"
        y="720"
        width="20"
@@ -1443,6 +1535,7 @@
        id="text75" />
     <text
        text-anchor="middle"
+       
        x="-352.91156"
        y="720"
        width="20"
@@ -1450,6 +1543,7 @@
        id="text76">Z+DSW</text>
     <text
        text-anchor="middle"
+       
        x="-328.91156"
        y="720"
        width="20"
@@ -1459,6 +1553,7 @@
        id="text78" />
     <text
        text-anchor="middle"
+       
        x="-304.91156"
        y="720"
        width="20"
@@ -1466,6 +1561,7 @@
        id="text79">Z+SDH</text>
     <text
        text-anchor="middle"
+       
        x="-280.91156"
        y="720"
        width="20"
@@ -1475,6 +1571,7 @@
        id="text81" />
     <text
        text-anchor="middle"
+       
        x="-256.91156"
        y="720"
        width="20"
@@ -1482,6 +1579,7 @@
        id="text82">Z+SSW</text>
     <text
        text-anchor="middle"
+       
        x="-232.91156"
        y="720"
        width="20"
@@ -1491,6 +1589,7 @@
        id="text84" />
     <text
        text-anchor="middle"
+       
        x="-208.91156"
        y="720"
        width="20"
@@ -1498,6 +1597,7 @@
        id="text85">DDH</text>
     <text
        text-anchor="middle"
+       
        x="-184.91158"
        y="720"
        width="20"
@@ -1507,6 +1607,7 @@
        id="text87" />
     <text
        text-anchor="middle"
+       
        x="-160.91158"
        y="720"
        width="20"
@@ -1514,6 +1615,7 @@
        id="text88">DSW</text>
     <text
        text-anchor="middle"
+       
        x="-136.91159"
        y="720"
        width="20"
@@ -1523,6 +1625,7 @@
        id="text90" />
     <text
        text-anchor="middle"
+       
        x="-112.91156"
        y="720"
        width="20"
@@ -1530,6 +1633,7 @@
        id="text91">SDH</text>
     <text
        text-anchor="middle"
+       
        x="-88.91156"
        y="720"
        width="20"
@@ -1539,6 +1643,7 @@
        id="text93" />
     <text
        text-anchor="middle"
+       
        x="-64.91156"
        y="720"
        width="20"
@@ -1546,14 +1651,17 @@
        id="text94">SSW</text>
     <text
        xml:space="preserve"
+       
        x="-199.1754"
        y="491.53979"
        id="text95"><tspan
          id="tspan22"
+         
          x="-199.1754"
          y="491.53979" /></text>
     <text
        text-anchor="middle"
+       
        x="-199.86897"
        y="240.5"
        width="20"
@@ -1561,6 +1669,7 @@
        id="text14-4">FMB</text>
     <text
        text-anchor="middle"
+       
        x="-56.62492"
        y="361.4541"
        width="20"
@@ -1568,6 +1677,7 @@
        id="text14-9" />
     <text
        text-anchor="middle"
+       
        x="-56.038158"
        y="361.4541"
        width="20"
@@ -1575,6 +1685,7 @@
        id="text16-8">MB</text>
     <text
        text-anchor="middle"
+       
        x="-130.15289"
        y="241.4541"
        width="20"
@@ -1582,12 +1693,15 @@
        id="text16-9">MF</text>
     <text
        xml:space="preserve"
+       
        x="-99.895966"
        y="240"
        id="text96"><tspan
-         id="tspan95" /></text>
+         id="tspan95"
+          /></text>
     <text
        text-anchor="middle"
+       
        x="-99.643097"
        y="241.4541"
        width="20"
@@ -1595,6 +1709,7 @@
        id="text16-3">MM</text>
     <text
        text-anchor="middle"
+       
        x="-161.87663"
        y="241.4541"
        width="20"
@@ -1602,6 +1717,7 @@
        id="text16-7">MFZ</text>
     <text
        text-anchor="middle"
+       
        x="69.855286"
        y="241.4541"
        width="20"
@@ -1609,6 +1725,7 @@
        id="text16-2">MMB</text>
     <text
        text-anchor="middle"
+       
        x="106.52686"
        y="241.4541"
        width="20"
@@ -1616,6 +1733,7 @@
        id="text16-98">MMBW</text>
     <text
        text-anchor="middle"
+       
        x="67.748848"
        y="361.44449"
        width="20"
@@ -1623,6 +1741,7 @@
        id="text16-5">MMBS</text>
     <text
        text-anchor="middle"
+       
        x="106.81664"
        y="361.4541"
        width="20"
@@ -1630,6 +1749,7 @@
        id="text16-1">MMBD</text>
     <text
        text-anchor="middle"
+       
        x="30.183697"
        y="361.44449"
        width="20"
@@ -1637,6 +1757,7 @@
        id="text16-79">MMBSW</text>
     <text
        text-anchor="middle"
+       
        x="151.98532"
        y="361.4541"
        width="20"
@@ -1644,6 +1765,7 @@
        id="text16-985">MMBSDH</text>
     <text
        text-anchor="middle"
+       
        x="50.105568"
        y="482.45419"
        width="20"
@@ -1651,6 +1773,7 @@
        id="text16-95">MMBSS</text>
     <text
        text-anchor="middle"
+       
        x="85.129829"
        y="482.45419"
        width="20"
@@ -1658,6 +1781,7 @@
        id="text16-12">MMBSD</text>
     <text
        text-anchor="middle"
+       
        x="-2.4915349"
        y="360.5459"
        width="20"
@@ -1665,6 +1789,7 @@
        id="text16-6">MBW</text>
     <text
        text-anchor="middle"
+       
        x="-12.868591"
        y="481.4541"
        width="20"
@@ -1672,6 +1797,7 @@
        id="text16-54">MBS</text>
     <text
        text-anchor="middle"
+       
        x="21.465641"
        y="481.4541"
        width="20"
@@ -1683,15 +1809,18 @@
        y="473"
        width="20"
        height="15"
-       id="node115" />
+       id="node115"
+        />
     <circle
        class="clickable"
        cx="-424.89252"
        cy="480"
        id="node116"
-       r="10" />
+       r="10"
+        />
     <text
        text-anchor="middle"
+       
        x="-453.02951"
        y="481.4541"
        width="20"
@@ -1699,6 +1828,7 @@
        id="text11-6">FZS</text>
     <text
        text-anchor="middle"
+       
        x="-425.3139"
        y="481.4541"
        width="20"
@@ -1707,6 +1837,7 @@
   </g>
   <text
      text-anchor="middle"
+     
      x="765.83362"
      y="523.53259"
      width="20"
@@ -1714,6 +1845,7 @@
      id="text16-74">MMBDS</text>
   <text
      text-anchor="middle"
+     
      x="815.77509"
      y="523.53259"
      width="20"
