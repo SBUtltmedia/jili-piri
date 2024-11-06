@@ -68,6 +68,8 @@
          data-name="_Z-" />
       <path
          class="linage"
+         data-step='3'
+         data-intro='The Green Lines show the path from "EGO" to the selected node.'
          d="m -351.91176,480 v 0 -60 h 132 v -60"
          id="i_59_10"
          data-name="_Z+" />
@@ -463,6 +465,8 @@
          id="i_42_45" />
       <path
          class="linage"
+         data-step='4'
+         data-intro='The Purple Lines show the path from "EGO" to the Jiliwiri inversion of the selected node.'
          d="m -351.91156,470 c 75.11914,-33.57144 143.9998,-1.45456 143.9998,-1.45456"
          id="i_10_31" />
       <path
@@ -597,8 +601,6 @@
        id="node66" />
     <rect
        class="clickable"
-       data-step='3'
-       data-intro='Hello step three!'
        x="-385.91156"
        y="473"
        width="20"
@@ -606,23 +608,26 @@
        id="node9" />
     <rect
        class="clickable"
-       data-step='2'
-       data-intro='Hello step two!'
        x="-289.91156"
        y="473"
        width="20"
        height="15"
        id="node30" />
-    <rect
-       class="clickable ego"
-       data-step='1'
-       data-intro='Hello step one!'
-       x="-221.57957"
-       y="468.46017"
-       width="29.819763"
-       height="23.079651"
-       id="node31"
-        />
+      <g
+         data-step='1'
+         data-intro='Hello! This node is "EGO," or the reference point of all kinship relations.'
+         >
+         <rect
+            class="clickable ego"
+            data-step='5'
+            data-intro='Clicking on "EGO" will unhighlight the pathways.'
+            x="-221.57957"
+            y="468.46017"
+            width="29.819763"
+            height="23.079651"
+            id="node31"
+         />
+      </g>
     <rect
        class="clickable"
        x="-121.91156"
@@ -859,6 +864,8 @@
        r="10" />
     <circle
        class="clickable"
+       data-step='2'
+       data-intro='Click on a node to use the program. The node and two lines will be highlighted.'
        cx="-207.91156"
        cy="360"
        r="10"

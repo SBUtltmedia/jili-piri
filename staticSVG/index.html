@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,12 @@
     <script src="pathFunctions.js"></script>
     <script src="svg-pan-zoom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.css" />
     <script>
         var panZoom
-        document.addEventListener("DOMContentLoaded", function() {
-            let el=document.getElementById("screen");
+        let reportArray = [];
+        document.addEventListener("DOMContentLoaded", function () {
+            let el = document.getElementById("screen");
             fetch('InkscapeTreePlain.svg')
                 .then(r => r.text())
                 .then(text => {
@@ -24,12 +26,12 @@
         });
         function init() {
             let clickables = document.getElementsByClassName("clickable");
-            console.log({clickables});
-            Array.from(clickables).forEach(clickable=>{
+            console.log({ clickables });
+            Array.from(clickables).forEach(clickable => {
                 clickable.addEventListener("click", nodeClick);
             });
             document.getElementById("EGO").addEventListener("click", centerEgo);
-            
+
             panZoom = svgPanZoom('#familyTree', {
                 viewportSelector: '.svg-pan-zoom_viewport',
                 panEnabled: true,
@@ -52,7 +54,7 @@
                 //onUpdatedCTM: function(){},
                 //customEventsHandler: {},
                 //eventsListenerElement: null
-            
+
             });
             // $(function() {
             //     panZoomInstance = svgPanZoom('#style1', {
@@ -74,109 +76,123 @@
             //     })
             // });
             // })
-            let intro=introJs()
-            
-            let stepLogic=[
-                ()=>document.getElementById("node10").dispatchEvent(new Event('click'))
+            let intro = introJs()
+
+            let stepLogic = [
+                () => document.getElementById("node10").dispatchEvent(new Event(''))
                 ,
+                () => document.getElementById("node59").dispatchEvent(new Event('click'))
                 ,
-                ()=>document.getElementById("node59").dispatchEvent(new Event('click'))]
-            
+                () => document.getElementById("node59").dispatchEvent(new Event('click'))
+                ,
+                () => document.getElementById("node59").dispatchEvent(new Event('click'))
+                ,
+                () => document.getElementById("node31").dispatchEvent(new Event('click'))
+                ,
+                () => document.getElementById("EGO").dispatchEvent(new Event('click'))
+            ]
+
             intro.onbeforechange(function () {
                 document.getElementById("node31").dispatchEvent(new Event('click'))
-                let arrayStep=this._currentStep;
+                let arrayStep = this._currentStep;
                 console.log(this._currentStep);
                 stepLogic[parseInt(this._currentStep)]()
-                
+
             });
-            intro.start();
+            if (!localStorage.getItem("tourdone")) {
+                intro.start();
+                localStorage.setItem("tourdone", true)
+            }
         }
+
 
         function centerEgo() {
             panZoom.zoom(2);
-            panZoom.pan({x: -100, y: -550});
+            panZoom.pan({ x: -100, y: -550 });
 
 
         }
 
         function nodeClick(e) {
+
             let familialRelationsDictionary = {
-                1: {"warlpiri": [6, 2, 1], "lineage": "FFF", "name": "wapirra/kirdana"},
-                93: {"warlpiri": [6, 2, 62, 93], "lineage": "FFM", "name": "wapirra/kirdana"},
-                96: {"warlpiri": [10, 59, 94, 96], "lineage": "MF", "name": "wapirra/kirdana"},
-                95: {"warlpiri": [10, 59, 95], "lineage": "MM", "name": "wapirra/kirdana"},
-                59: {"warlpiri": [10, 59], "lineage": "M", "name": "wapirra/kirdana"},
-                6: {"warlpiri": [6], "lineage": "F", "name": "wapirra/kirdana"},
-                61: {"warlpiri": [6, 3, 61], "lineage": "FM", "name": "wapirra/kirdana"},
-                2: {"warlpiri": [6, 2], "lineage": "FF", "name": "wapirra/kirdana"},
-                41: {"warlpiri": [41], "lineage": "S", "name": "wapirra/kirdana"},
-                12: {"warlpiri": [10, 11, 12], "lineage": "Z+DD", "name": "wapirra/kirdana"},
-                51: {"warlpiri": [51], "lineage": "W", "name": "wapirra/kirdana"},
-                32: {"warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana"},
-                33: {"warlpiri": [51, 32, 33], "lineage": "DD", "name": "wapirra/kirdana"},
-                11: {"warlpiri": [10, 11], "lineage": "ZD", "name": "wapirra/kirdana"},
-                7: {"warlpiri": [7], "lineage": "Z-", "name": "wapirra/kirdana"},
-                10: {"warlpiri": [10], "lineage": "Z+", "name": "wapirra/kirdana"},
-                52: {"warlpiri": [52], "lineage": "B+", "name": "wapirra/kirdana"},
-                55: {"warlpiri": [55], "lineage": "B-", "name": "wapirra/kirdana"},
-                31: {"warlpiri": [31], "lineage": "EGO", "name": "wapirra/kirdana"}
+                1: { "warlpiri": [6, 2, 1], "lineage": "FFF", "name": "wapirra/kirdana" },
+                93: { "warlpiri": [6, 2, 62, 93], "lineage": "FFM", "name": "wapirra/kirdana" },
+                96: { "warlpiri": [10, 59, 94, 96], "lineage": "MF", "name": "wapirra/kirdana" },
+                95: { "warlpiri": [10, 59, 95], "lineage": "MM", "name": "wapirra/kirdana" },
+                59: { "warlpiri": [10, 59], "lineage": "M", "name": "wapirra/kirdana" },
+                6: { "warlpiri": [6], "lineage": "F", "name": "wapirra/kirdana" },
+                61: { "warlpiri": [6, 3, 61], "lineage": "FM", "name": "wapirra/kirdana" },
+                2: { "warlpiri": [6, 2], "lineage": "FF", "name": "wapirra/kirdana" },
+                41: { "warlpiri": [41], "lineage": "S", "name": "wapirra/kirdana" },
+                12: { "warlpiri": [10, 11, 12], "lineage": "Z+DD", "name": "wapirra/kirdana" },
+                51: { "warlpiri": [51], "lineage": "W", "name": "wapirra/kirdana" },
+                32: { "warlpiri": [51, 32], "lineage": "D", "name": "wapirra/kirdana" },
+                33: { "warlpiri": [51, 32, 33], "lineage": "DD", "name": "wapirra/kirdana" },
+                11: { "warlpiri": [10, 11], "lineage": "ZD", "name": "wapirra/kirdana" },
+                7: { "warlpiri": [7], "lineage": "Z-", "name": "wapirra/kirdana" },
+                10: { "warlpiri": [10], "lineage": "Z+", "name": "wapirra/kirdana" },
+                52: { "warlpiri": [52], "lineage": "B+", "name": "wapirra/kirdana" },
+                55: { "warlpiri": [55], "lineage": "B-", "name": "wapirra/kirdana" },
+                31: { "warlpiri": [31], "lineage": "EGO", "name": "wapirra/kirdana" }
                 //4: {"warlpiri": [11, 5, 10], "lineage": "FF", "name": "warringiyi"}
             }
 
             let genderDictionary = {
-                "Z": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
-                "M": {"gender": "female", "generation": false, "level": 0, "opposite": "D"},
-                "D": {"gender": "female", "generation": false, "level": 2, "opposite": "M"},
-                "W": {"gender": "female", "generation": true, "level": 1, "opposite": "N/A"},
-                "B": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
-                "F": {"gender": "male", "generation": false, "level": 0, "opposite": "S"},
-                "S": {"gender": "male", "generation": false, "level": 2, "opposite": "F"},
-                "H": {"gender": "male", "generation": true, "level": 1, "opposite": "N/A"},
+                "Z": { "gender": "female", "generation": true, "level": 1, "opposite": "N/A" },
+                "M": { "gender": "female", "generation": false, "level": 0, "opposite": "D" },
+                "D": { "gender": "female", "generation": false, "level": 2, "opposite": "M" },
+                "W": { "gender": "female", "generation": true, "level": 1, "opposite": "N/A" },
+                "B": { "gender": "male", "generation": true, "level": 1, "opposite": "N/A" },
+                "F": { "gender": "male", "generation": false, "level": 0, "opposite": "S" },
+                "S": { "gender": "male", "generation": false, "level": 2, "opposite": "F" },
+                "H": { "gender": "male", "generation": true, "level": 1, "opposite": "N/A" },
             }
-            function findKey (lineage) { //returns the key of the lineage path that fits the one passed
+            function findKey(lineage) { //returns the key of the lineage path that fits the one passed
                 let count = 0;
                 //console.log("lineage: ", lineage);
                 for (const [key, value] of Object.entries(familialRelationsDictionary)) {
-                  //console.log("value[\"lineage\"]: ", value["lineage"]);
-                  if ((value["lineage"]) == lineage) {
-                    count++;
-                    //console.log("count: ", count);
-                  }
-                  if (count > 0) {
-                    //console.log("Number(key): ", Number(key));
-                    return (Number(key));
-                  }
+                    //console.log("value[\"lineage\"]: ", value["lineage"]);
+                    if ((value["lineage"]) == lineage) {
+                        count++;
+                        //console.log("count: ", count);
+                    }
+                    if (count > 0) {
+                        //console.log("Number(key): ", Number(key));
+                        return (Number(key));
+                    }
                 }
-              }
-            
+            }
+
             let id = e.target.id;
             console.log(e.target.id);
             let idNum = parseInt(id.split("node")[1]);
+            reportArray.push(idNum);
+            console.log({ reportArray });
+            Array.from(document.getElementsByClassName("selected")).forEach(selected => selected.classList.remove("selected"));
+            Array.from(document.getElementsByClassName("selectedJiliwiri")).forEach(selectedJiliwiri => selectedJiliwiri.classList.remove("selectedJiliwiri"));
 
-            Array.from(document.getElementsByClassName("selected")).forEach(selected=>selected.classList.remove("selected"));
-            Array.from(document.getElementsByClassName("selectedJiliwiri")).forEach(selectedJiliwiri=>selectedJiliwiri.classList.remove("selectedJiliwiri"));
-            
-            
+
             document.getElementById(`${id}`).classList.toggle("selected");
-            
+
             //console.log("toJiliwiri: ", toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
-            
-            for(let id = 0; id < familyTreeSize; id++) {
-                if(id in familialRelationsDictionary) {
+
+            for (let id = 0; id < familyTreeSize; id++) {
+                if (id in familialRelationsDictionary) {
                     coverPath([familialRelationsDictionary[idNum]["warlpiri"]]);
                 }
             }
-            
-            if (familialRelationsDictionary[idNum]["warlpiri"] == 31) {
 
+            if (familialRelationsDictionary[idNum]["warlpiri"] == 31) {
+                reportArray = [];
             }
             else {
                 highlightPath([familialRelationsDictionary[idNum]["warlpiri"]], false);
                 //highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
-                
+
                 console.log("idNum:", toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
-                
-                
+
+
                 highlightPath([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]], true);
                 let jiliwiriKey = "node" + findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]));
                 console.log("jiliwiri: ", jiliwiriKey);
@@ -184,13 +200,31 @@
             }
 
         }
-        
-        </script>
+        const copyToClipboard = str => {
+            const el = document.createElement('textarea');
+            el.value = JSON.stringify({"warlpiri": reportArray, "lineage": "", "name": ""});
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        };
+
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+            copyToClipboard();
+        }
+
+
+    </script>
 </head>
+
 <body>
     <div id="screen">
-        
+
     </div>
-    <button id="EGO">Center on EGO</button>
+    <button id="EGO" data-step='6'
+        data-intro='The "Center on EGO" Button centers the page on "EGO" and zooms in.'>Center on EGO</button>
 </body>
+
 </html>

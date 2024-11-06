@@ -4,9 +4,17 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
     true: "Jiliwiri",
     false: ""
   }
+
   if (highlightLineEl != null) {
 
-    let newId = `${highlightLineEl.getAttribute("id")}_highlighted${map[jiliwiri]}`
+    let highlightId = `${highlightLineEl.getAttribute("id")}_highlighted`
+    let existingLine = document.querySelector(`[id^="${highlightId}"]`)
+    if (existingLine) {
+    existingLine.classList.add(`highlighted${map[jiliwiri]}`)
+    return
+  }
+
+    let newId = `${highlightId}${map[jiliwiri]}`
     let oldClass = highlightLineEl.getAttribute("class") || "";
     
     document.getElementById(newId)?.remove();
