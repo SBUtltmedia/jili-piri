@@ -101,7 +101,7 @@
       <path
          class="linage"
          d="m 293.80476,480 v 0 -60 h 12 v -60"
-         id="i_89_73"
+         id="i_66_73"
          data-name="_FFZSS" />
       <path
          class="linage"
@@ -151,7 +151,7 @@
       <path
          class="linage"
          d="m -375.91176,720 v 0 -60 h -12 v -60"
-         id="i_11_15"
+         id="i_19_15"
          data-name="_Z+DS" />
       <path
          class="linage"
@@ -241,7 +241,7 @@
          data-name="_SS" />
       <path
          class="marriage"
-         id="marriage_7_9_undefined_undefined"
+         id="marriage_3_5_undefined_undefined"
          data-name="_"
          d="m -446.64096,360 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
       <path
@@ -261,7 +261,7 @@
          d="m -375.91176,720 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
       <path
          class="marriage"
-         id="marriage_19_21_undefined_undefined"
+         id="marriage_19_11_undefined_undefined"
          data-name="_"
          d="m -399.91176,600 h 12 v 0 0 0 0 0 0 0 h 28 v 0" />
       <path
@@ -276,7 +276,7 @@
          d="m -279.91176,720 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
       <path
          class="marriage"
-         id="marriage_28_30_undefined_undefined"
+         id="marriage_28_20_undefined_undefined"
          data-name="_"
          d="m -319.91176,600 h 12 v 0 0 0 h 16 v 0 0 0 h 12 v 0" />
       <path
@@ -296,7 +296,7 @@
          d="m -183.91175,720 h 12.00002 v 0 0 0 0 0 0 0 h 12.00003 v 0" />
       <path
          class="marriage"
-         id="marriage_40_42_undefined_undefined"
+         id="marriage_40_32_undefined_undefined"
          data-name="_"
          d="m -207.91176,600 h 12 v 0 0 0 0 0 0 0 h 28.00004 v 0" />
       <path
@@ -356,7 +356,7 @@
          d="m 245.80476,480 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
       <path
          class="marriage"
-         id="marriage_82_84_undefined_undefined"
+         id="marriage_74_76_undefined_undefined"
          data-name="_"
          d="m 269.80476,600 h 12 v 0 0 0 0 0 0 0 h 12 v 0" />
       <path
@@ -1769,7 +1769,7 @@
        y="361.4541"
        width="20"
        height="7.5"
-       id="text16-985">MMBSDH</text>
+       id="text16-985">MMBDH</text>
     <text
        text-anchor="middle"
        

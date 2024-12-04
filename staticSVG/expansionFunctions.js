@@ -134,7 +134,7 @@ let genderDictionary = {
     let lineageStr = lineage;
     let lineageLength = lineageStr.length;
     let addStr = "";
-    console.log("lineage: ", lineage);
+    //console.log("lineage: ", lineage);
     for(let n = 0; n < lineageLength; n++) {
       //console.log("charAt(n); ", lineageStr.charAt(n));
       if (!(lineageStr.charAt(n)=="+") && !(lineageStr.charAt(n)=="-")) {
@@ -162,6 +162,6 @@ let genderDictionary = {
       }
     }
     //console.log("lineageStr: ", lineageStr);
-    console.log("expandparse: ", lineageStr);
+    //console.log("expandparse: ", lineageStr);
     return(lineageStr);
   }
