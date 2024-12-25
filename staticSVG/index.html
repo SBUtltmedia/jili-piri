@@ -249,7 +249,7 @@
             let info = `You clicked on: ${warlpiri}, the opposite is ${jiliwiri}`
             document.getElementById("info").innerHTML=info;
 
-            if (!findKey(jiliwiri)) {
+            if (!findKey(jiliwiri)) { //if you click on a node without the Jiliwiri Inversion represented it won't highlight the path to the node because of the return
                 return
             }
 

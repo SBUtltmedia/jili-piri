@@ -114,6 +114,18 @@ let genderDictionary = {
            lineageStr = lineageStr.substring(n + 1);
            n = 0;
          }
+        
+
+         //experimental to account for MBF instead of MF issue
+         if(n > 0 && (genderDictionary[lineageStr.charAt(n - 1)]["gender"] == genderDictionary[lineageStr.charAt(n)]["gender"]) && (lineageStr.charAt(n - 1) != "W") && (lineageStr.charAt(n - 1) != "H") && (lineageStr.charAt(n) != "W") && (lineageStr.charAt(n) != "H")) {
+            console.log("first passed");
+            console.log("n-1: ", lineageStr.charAt(n - 1));
+            console.log("n: ", lineageStr.charAt(n));
+            if (genderDictionary[lineageStr.charAt(n - 1)]["level"] > genderDictionary[lineageStr.charAt(n)]["level"]) {
+              lineageStr = lineageStr.substring(0, n - 1) + lineageStr.substring(n);
+              console.log("second passed");
+            }
+         }
       }
       catch(err) {
   

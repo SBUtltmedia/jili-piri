@@ -5,7 +5,11 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
     false: ""
   }
 
+  //console.log("passed to makeLine");
+
   if (highlightLineEl != null) {
+    
+    //console.log("highlightLineEl != null");
 
     let highlightId = `${highlightLineEl.getAttribute("id")}_highlighted`
     let existingLine = document.querySelector(`[id^="${highlightId}"]`)
@@ -24,16 +28,6 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
     cloneLine.setAttribute("class" , `${oldClass} highlighted${map[jiliwiri]}`);
     //console.log(map[jiliwiri]);
     
-    // if (jiliwiri == false) {
-    //   cloneLine.setAttribute("id" , newId);
-    //   cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlighted");
-      
-    // }
-    // else if (jiliwiri == true) {
-    //   cloneLine.setAttribute("id" , highlightLineEl.getAttribute("id")+"_highlightJiliwiri");
-    //   cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlightedJiliwiri");
-
-    // }
     
     cloneLine.setAttribute("d" , highlightLineEl.getAttribute("d"));
     paths[paths.length - 1].after(cloneLine);
@@ -42,15 +36,7 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
   else {
     //console.log(highlightLine, " is not a valid ID");
   }
-  // try {
-  //   cloneLine.setAttribute("id" , highlightLineEl.getAttribute("id")+"_highlight");
-  //   cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlighted");
-  //   cloneLine.setAttribute("d" , highlightLineEl.getAttribute("d"));
-  //   paths[paths.length - 1].after(cloneLine);
-  // }
-  // catch (err) {
-
-  // }
+  
     
   
 
@@ -72,14 +58,10 @@ function highlight (idPair, jiliwiri) {
     let marriage = true;
 
 
-    // let highlightLineB = `#i_${idPair[1]}_${idPair[0]}`; // checks idPair backwards (which is why there is a B)
-    // let highlightLineElB = document.querySelector(highlightLineB);
-    // let highlightMarriageLineB = `#marriage_${idPair[1]}_${idPair[0]}`;
-    // let highlightMarriageLineElB = document.querySelector(highlightMarriageLineB);
+    
 
     let cloneLine = document.createElementNS("http://www.w3.org/2000/svg", 'path');
-    //[...highlightLineEl.attributes].forEach( attr => { cloneLine.setAttributeNS("http://www.w3.org/2000/svg", attr.nodeName ,attr.nodeValue) })
-    
+   
   
     for (let n = 0; n < 4; n++) {
 
@@ -99,52 +81,7 @@ function highlight (idPair, jiliwiri) {
       }
       
     }
-    //makeLine(highlightLine, cloneLine, highlightLineEl, paths);
-
-    //helped by W3 Schools
-    //makeLine(highlightLineB, cloneLine, highlightLineElB, paths);
-
-    // try {
-    //   cloneLine.setAttribute("id" , highlightLineEl.getAttribute("id")+"_highlight");
-    //   cloneLine.setAttribute("class" , highlightLineEl.getAttribute("class")+" highlighted");
-    //   cloneLine.setAttribute("d" , highlightLineEl.getAttribute("d"));
-    //   paths[paths.length - 1].after(cloneLine);
-    // }
-    // catch (err) {
-
-    // }
-
-    // try {
-    //   cloneLine.setAttribute("id" , highlightLineElB.getAttribute("id")+"_highlight");
-    //   cloneLine.setAttribute("class" , highlightLineElB.getAttribute("class")+" highlighted");
-    //   cloneLine.setAttribute("d" , highlightLineElB.getAttribute("d"));
-    //   paths[paths.length - 1].after(cloneLine);
-    // }
-    // catch (err) {
-
-    // }
-
-    // try {
-    //   //console.log("idPair: ", idPair)
-    //   cloneLine.setAttribute("id" , highlightMarriageLineEl.getAttribute("id")+"_highlight");
-    //   cloneLine.setAttribute("class" , highlightMarriageLineEl.getAttribute("class")+" highlighted");
-    //   cloneLine.setAttribute("d" , highlightMarriageLineEl.getAttribute("d"));
-    //   paths[paths.length - 1].after(cloneLine);
-    // }
-    // catch (err) {
-
-    // }
-
-    // try {
-    //   //console.log("idPair: ", idPair)
-    //   cloneLine.setAttribute("id" , highlightMarriageLineElB.getAttribute("id")+"_highlight");
-    //   cloneLine.setAttribute("class" , highlightMarriageLineElB.getAttribute("class")+" highlighted");
-    //   cloneLine.setAttribute("d" , highlightMarriageLineElB.getAttribute("d"));
-    //   paths[paths.length - 1].after(cloneLine);
-    // }
-    // catch (err) {
-
-    // }
+    
     
   
   }
@@ -303,6 +240,7 @@ function highlight (idPair, jiliwiri) {
       retStr = firstReducedStr.substring(0, firstReducedStrLength - 1) + invertSeniority(firstReducedStr.charAt(firstReducedStrLength - 1));
       //console.log("sentToInvertSeniority");
       secondReducedStr = reduceJiliwiri(retStr);
+      //console.log("secondReducedStr: ", secondReducedStr);
       retStr = secondReducedStr;
       if (retStr == "") {
         retStr = "EGO"

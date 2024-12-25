@@ -1,6 +1,6 @@
 :root {
-    --warlpiri: rgba(0, 255, 76, 0.5);
-    --jiliwiri: rgba(136, 62, 255, 0.5);
+    --warlpiri: rgb(103, 194, 131);
+    --jiliwiri: rgba(136, 62, 255, 1);
 }
 svg {
     font: 4px sans-serif;
@@ -33,20 +33,19 @@ circle {
         border-width: 1px;
         box-sizing: border-box;
 }
+.highlighted,.highlightedJiliwiri {
+    stroke-width: 3px;
+    fill: none;
+}
 .highlighted {
     stroke: var(--warlpiri);
-    stroke-width: 1.8px;
-    fill: none;
-    
 }
 .highlightedJiliwiri {
     stroke: var(--jiliwiri);
-    stroke-width: 1.8px;
-    fill: none;
     
 }
 .highlighted.highlightedJiliwiri {
-    stroke: rgba(255, 0, 0, 0.5);
+    /* stroke: rgba(255, 0, 0, 0.5); */
     animation: blink 2s infinite;
 }
 @keyframes blink {
