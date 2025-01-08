@@ -2,6 +2,9 @@
     --warlpiri: rgb(103, 194, 131);
     --jiliwiri: rgba(136, 62, 255, 1);
 }
+path {
+    stroke-linecap:round;
+}
 svg {
     font: 4px sans-serif;
 }

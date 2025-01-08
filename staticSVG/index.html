@@ -133,14 +133,14 @@
                 84: {"warlpiri":[6,2,62,91,66,82,84],"lineage":"FFZSS+W","name":""},
                 85: {"warlpiri":[6,2,62,91,66,85],"lineage":"FFZSS-","name":""},
                 87: {"warlpiri":[6,2,62,91,66,85,87],"lineage":"FFZSS-W","name":""},
-                89: {"warlpiri":[6,2,62,66,89],"lineage":"FFZSW","name":""},
+                89: {"warlpiri":[6,2,62,91,66,89],"lineage":"FFZSW","name":""},
                 91: {"warlpiri":[6,2,62,91],"lineage":"FFZH","name":""},
                 66: {"warlpiri":[6,2,62,91,66],"lineage":"FFZS","name":""},
                 93: { "warlpiri": [6, 2, 62, 93], "lineage": "FFM", "name": "wapirra/kirdana" },
                 94: {"warlpiri":[10,59,94],"lineage":"MB","name":""},
                 63: {"warlpiri":[6,2,62,63],"lineage":"FFZD","name":""},
                 96: { "warlpiri": [10, 59, 94, 96], "lineage": "MF", "name": "wapirra/kirdana" },
-                97: {"warlpiri":[10,59,94,96,97],"lineage":"","name":""},
+                97: {"warlpiri":[10,59,94,96,97],"lineage":"MFZ","name":""},
                 98: {"warlpiri":[10,59,95,98],"lineage":"MMB","name":""},
                 99: {"warlpiri":[10,59,95,98,99],"lineage":"MMBW","name":""},
                 95: { "warlpiri": [10, 59, 95], "lineage": "MM", "name": "wapirra/kirdana" },
@@ -161,8 +161,8 @@
                 54: {"warlpiri":[52,54],"lineage":"B+W","name":""},
                 55: { "warlpiri": [55], "lineage": "B-", "name": "wapirra/kirdana" },
                 57: {"warlpiri":[55,57],"lineage":"B-W","name":""},
-                100: {"warlpiri":[10,59,94,100],"lineage":"","name":""},
-                101: {"warlpiri":[6,3,61,101],"lineage":"","name":""},
+                100: {"warlpiri":[10,59,94,100],"lineage":"MBW","name":""},
+                101: {"warlpiri":[6,3,61,101],"lineage":"FMB","name":""},
                 102: {"warlpiri":[10,59,94,102],"lineage":"MBS","name":""},
                 103: {"warlpiri":[10,59,94,100,103],"lineage":"MBD","name":""},
                 104: {"warlpiri":[10,59,95,98,105,104],"lineage":"MMBSW","name":""},
@@ -247,11 +247,16 @@
             let jiliwiri = toJiliwiri([warlpiri]);
             
             let info = `You clicked on: ${warlpiri}, the opposite is ${jiliwiri}`
+
+            if (familialRelationsDictionary[idNum]["warlpiri"] == 31) { //added so info doesn't post undefined for EGO
+                info = `You clicked on: ${warlpiri}`
+            }
+
             document.getElementById("info").innerHTML=info;
 
-            if (!findKey(jiliwiri)) { //if you click on a node without the Jiliwiri Inversion represented it won't highlight the path to the node because of the return
-                return
-            }
+            // if (!findKey(jiliwiri)) { //if you click on a node without the Jiliwiri Inversion represented it won't highlight the path to the node because of the return
+            //     return
+            // }
 
             for (let id = 0; id < familyTreeSize; id++) {
                 if (id in familialRelationsDictionary) {
@@ -266,6 +271,9 @@
                 highlightPath([familialRelationsDictionary[idNum]["warlpiri"]], false);
                 //highlightPathJiliwiri([familialRelationsDictionary[findKey(toJiliwiri([familialRelationsDictionary[idNum]["lineage"]]))]["warlpiri"]]);
 
+                if (!findKey(jiliwiri)) { //if you click on a node without the Jiliwiri Inversion represented it won't highlight the path to the node because of the return
+                    return
+                }
                 console.log("jiliwiri:", toJiliwiri([warlpiri]));
                 //console.log("lineage: ", familialRelationsDictionary[idNum]["lineage"]);
 

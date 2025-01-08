@@ -5,6 +5,11 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
     false: ""
   }
 
+  // Array.from(document.querySelectorAll("[id*='highlight']")).forEach((el)=>{
+  //   el.remove();
+  //   //console.log(el);
+  // })
+
   //console.log("passed to makeLine");
 
   if (highlightLineEl != null) {
@@ -34,6 +39,7 @@ function makeLine (highlightLine, cloneLine, highlightLineEl, paths, marriage, j
     cloneLine.classList.remove("null")
   }
   else {
+    
     //console.log(highlightLine, " is not a valid ID");
   }
   
@@ -224,7 +230,19 @@ function highlight (idPair, jiliwiri) {
     let firstReducedStr = "";
     let secondReducedStr = "";
     let retStr = "";
-  
+    let lineageStrLength = ""
+    
+    //console.log("lineageStr: ", lineageStr);
+
+    lineageStrLength = lineageStr.length;
+    //console.log("lineageStrLength: ", lineageStrLength);
+
+    if (lineageStr.charAt(lineageStrLength - 1) == "+" || lineageStr.charAt(lineageStrLength - 1) == "-") {
+      retStr = lineageStr.substring(0, lineageStrLength - 1) + invertSeniority(lineageStr.charAt(lineageStrLength - 1));
+      return(retStr);
+    }
+
+    
     adjustedStr = adjustForSpouse(lineageStr);
     //console.log("adjustedStr: ", adjustedStr);
     expandedStr = expandParse(adjustedStr);
@@ -236,20 +254,21 @@ function highlight (idPair, jiliwiri) {
     //console.log("firstReducedStr: ", firstReducedStr);
     //console.log("firstReducedStrLength: ", firstReducedStrLength);
   
-    if (firstReducedStr.charAt(firstReducedStrLength - 1) == "+" || firstReducedStr.charAt(firstReducedStrLength - 1) == "-") {
-      retStr = firstReducedStr.substring(0, firstReducedStrLength - 1) + invertSeniority(firstReducedStr.charAt(firstReducedStrLength - 1));
-      //console.log("sentToInvertSeniority");
-      secondReducedStr = reduceJiliwiri(retStr);
-      //console.log("secondReducedStr: ", secondReducedStr);
-      retStr = secondReducedStr;
-      if (retStr == "") {
-        retStr = "EGO"
-      }
-      //console.log("retStr: ", retStr);
-      //console.log("retStr: ", retStr);
-      return(retStr);
-    }
-    else {
+    // if (firstReducedStr.charAt(firstReducedStrLength - 1) == "+" || firstReducedStr.charAt(firstReducedStrLength - 1) == "-") {
+    //   retStr = firstReducedStr.substring(0, firstReducedStrLength - 1) + invertSeniority(firstReducedStr.charAt(firstReducedStrLength - 1));
+    //   //console.log("sentToInvertSeniority");
+    //   secondReducedStr = reduceJiliwiri(retStr);
+    //   //console.log("secondReducedStr: ", secondReducedStr);
+    //   retStr = secondReducedStr;
+    //   if (retStr == "") {
+    //     retStr = "EGO"
+    //   }
+    //   //console.log("retStr: ", retStr);
+    //   //console.log("retStr: ", retStr);
+    //   return(retStr);
+    // }
+
+     //was else
       for(n = firstReducedStrLength - 1; n >= 0; n--) {
         if (firstReducedStr.charAt(n) == "M" || firstReducedStr.charAt(n) == "F" || firstReducedStr.charAt(n) == "D" || firstReducedStr.charAt(n) == "S") {
           retStr = firstReducedStr.substring(0, n) + invertParentChild(firstReducedStr.charAt(n)) + firstReducedStr.substring(n + 1);
@@ -267,7 +286,7 @@ function highlight (idPair, jiliwiri) {
       }
       //console.log("toJiliwiri did not return");
   
-    }
+    
   
   }
 
