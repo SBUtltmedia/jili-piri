@@ -138,6 +138,8 @@ let genderDictionary = {
           }
         }
         
+      
+
 
       // lineageLength = lineageStr.length;
       // console.log("lineageLength: ", lineageLength)
@@ -169,6 +171,15 @@ let genderDictionary = {
       }
     }
 
+    //fix SZ to D issue
+    for(n = lineageLength - 1; n > 0; n--) {
+      if (((lineageStr.charAt(n) == "Z") && (lineageStr.charAt(n-1) == "S"))) {
+        lineageStr = lineageStr.substring(0, n-1) + "D" + lineageStr.substring(n+1);
+      }
+      else if ((((lineageStr.charAt(n) == "B") && (lineageStr.charAt(n-1) == "D")))) {
+        lineageStr = lineageStr.substring(0, n-1) + "S" + lineageStr.substring(n+1)
+      }
+    }
 
     
   
